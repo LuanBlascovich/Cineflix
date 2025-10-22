@@ -1,0 +1,111 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  color: #ffe100;
+  background: none;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #0b1741; /* header com fundo escuro */
+}
+
+/* Logo e menu */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffe100;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Container de ícones (barra de pesquisa + usuário) */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Barra de pesquisa */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 250px;
+  height: 36px;
+  padding: 0 40px 0 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #ffffff; /* barra branca */
+  color: #0b1741;
+}
+
+.search-input::placeholder {
+  color: #888888;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: #0b1741;
+  cursor: pointer;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Botão circular do usuário */
+.user-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* círculo perfeito */
+  border: none;
+  background-color: #ffffff; /* círculo branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-button:hover {
+  transform: scale(1.1); /* efeito ao passar mouse */
+}
+
+.user-icon {
+  font-size: 20px;
+  color: #0b1741; /* ícone escuro dentro do círculo */
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
