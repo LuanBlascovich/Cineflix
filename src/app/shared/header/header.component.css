@@ -1,10 +1,5 @@
 /* Reset global */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
-  color: #ffe100;
   background: none;
 }
 
@@ -15,7 +10,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 80px;
-  background-color: #0b1741; /* header com fundo escuro */
+  font-family: "Work Sans", sans-serif;
+  background-color: #0b1741;
+  
 }
 
 /* Logo e menu */
@@ -23,6 +20,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  color: #ffe100;
 }
 
 .logo {
@@ -51,25 +49,24 @@
 .header-icons {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 /* Barra de pesquisa */
 .search-container {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: inline-block; /* para ajustar largura do container ao input */
 }
 
 .search-input {
-  width: 250px;
+  width: 350px;
   height: 36px;
-  padding: 0 40px 0 10px;
-  border-radius: 20px;
+  padding: 0 40px 0 10px; /* espaço direito suficiente para o ícone */
+  border-radius: 15px;
   border: none;
   outline: none;
   font-size: 14px;
-  background-color: #ffffff; /* barra branca */
+  background-color: #ffffff;
   color: #0b1741;
 }
 
@@ -79,10 +76,12 @@
 
 .search-icon {
   position: absolute;
-  right: 10px;
+  right: 10px;           
+  top: 50%;              
+  transform: translateY(-50%);
+  pointer-events: none;  
   font-size: 20px;
-  color: #0b1741;
-  cursor: pointer;
+  color: #888888;        
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
@@ -90,9 +89,9 @@
 .user-button {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* círculo perfeito */
+  border-radius: 17px;
   border: none;
-  background-color: #ffffff; /* círculo branco */
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,11 +100,18 @@
 }
 
 .user-button:hover {
-  transform: scale(1.1); /* efeito ao passar mouse */
+  transform: scale(1.1);
 }
 
 .user-icon {
   font-size: 20px;
-  color: #0b1741; /* ícone escuro dentro do círculo */
+  color: #0b1741;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+
+.search-icon, .user-icon {
+  font-size: 25px;
+  color: #0b1741;
+  cursor: pointer;
 }

@@ -1,25 +1,29 @@
 <header class="header">
     <div class="logo-container">
-        <img class="logo" src="assets/image/logo.png" alt="Logo">
-
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#" class="nav-link">HOME</a></li>
-                <li><a href="#" class="nav-link">FILMES</a></li>
-                <li><a href="#" class="nav-link">CATEGORIA</a></li>
-                <li><a href="#" class="nav-link">SOBRE</a></li>
-            </ul>
-        </nav>
+      <img class="logo" src="assets/image/logo.png" alt="Logo">
+  
+      <nav class="nav-menu">
+        <ul>
+          <li><a routerLink="/home" class="nav-link">HOME</a></li>
+          <li><a routerLink="/filmes" class="nav-link">FILMES</a></li>
+          <li><a routerLink="/categoria" class="nav-link">CATEGORIA</a></li>
+          <li><a routerLink="/sobre" class="nav-link">SOBRE</a></li>
+        </ul>
+      </nav>
     </div>
+  
     <div class="header-icons">
-        <!-- Barra de pesquisa -->
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Pesquisar...">
-            <span class="material-symbols-outlined search-icon">search</span>
-        </div>
-        <!-- Botão do usuário -->
-        <button class="user-button" routerLink="/login" aria-label="Login">
-            <span class="material-symbols-outlined user-icon">person</span>
-        </button>
+      <!-- Barra de pesquisa -->
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Pesquisar...">
+        <span class="material-symbols-outlined search-icon">search</span>
+      </div>
+
+  
+      <!-- Botão circular do usuário -->
+      <button class="user-button" routerLink="/login" aria-label="Login">
+        <span class="material-symbols-outlined user-icon">person</span>
+      </button>
     </div>
-</header>
+  </header>
+  
