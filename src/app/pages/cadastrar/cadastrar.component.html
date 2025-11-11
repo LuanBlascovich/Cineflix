@@ -1,6 +1,6 @@
 <div class="login">
   <div class="formulario-card">
-    <h1 class="titulo-formulario">Cadastrar</h1>
+    <h1 class="titulo-formulario">{{ isEditMode ? 'Editar Usuário' : 'Cadastrar' }}</h1>
 
     <form (ngSubmit)="cadastrar(cadForm)" #cadForm="ngForm">
 
@@ -13,7 +13,7 @@
       <div class="grupo-input">
         <label for="cpf" class="rotulo">CPF</label>
         <input id="cpf" name="cpf" type="text" class="campo-input" placeholder="Digite seu CPF" [(ngModel)]="cpf"
-          required maxlength="14" (blur)="validarCPF()" autocomplete="off">
+          required maxlength="14" (blur)="validarCPF()" autocomplete="off" [readonly]="isEditMode">
         <small *ngIf="cpfInvalido" class="mensagem-erro">CPF inválido</small>
       </div>
 
@@ -29,8 +29,8 @@
       <div class="grupo-input">
         <label for="senha" class="rotulo">Senha</label>
         <input id="senha" name="senha" type="password" class="campo-input" placeholder="Crie uma senha"
-          [(ngModel)]="senha" required minlength="1" #senhaCtrl="ngModel" autocomplete="new-password">
-        <small *ngIf="senhaCtrl.invalid && senhaCtrl.touched" class="mensagem-erro">
+          [(ngModel)]="senha" [required]="!isEditMode" minlength="1" #senhaCtrl="ngModel" autocomplete="new-password">
+        <small *ngIf="senhaCtrl.invalid && senhaCtrl.touched">
           A senha deve ter pelo menos 1 caracter
         </small>
       </div>
@@ -38,17 +38,17 @@
       <div class="grupo-input">
         <label for="confirmSenha" class="rotulo">Confirme a senha</label>
         <input id="confirmSenha" name="confirmSenha" type="password" class="campo-input" placeholder="Repita sua senha"
-          [(ngModel)]="confirmSenha" required #confirmSenhaCtrl="ngModel" autocomplete="new-password">
+          [(ngModel)]="confirmSenha" [required]="!isEditMode" #confirmSenhaCtrl="ngModel" autocomplete="new-password">
         <small *ngIf="senha !== confirmSenha && confirmSenhaCtrl.touched" class="mensagem-erro">
           As senhas não coincidem
         </small>
       </div>
 
       <button type="submit" class="botao-enviar" [disabled]="cadForm.invalid || cpfInvalido || senha !== confirmSenha">
-        Cadastrar
+        {{ isEditMode ? 'Editar' : 'Cadastrar' }}
       </button>
 
-      <div class="link-login">
+      <div class="link-login" *ngIf="!isEditMode">
         Já tem uma conta?
         <a routerLink="/login">Entrar</a>
       </div>

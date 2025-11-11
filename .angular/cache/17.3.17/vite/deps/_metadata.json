@@ -1,73 +1,73 @@
 {
-  "hash": "b4de6f18",
-  "configHash": "179629e9",
-  "lockfileHash": "a1bb834d",
-  "browserHash": "2474a719",
+  "hash": "07cedf5e",
+  "configHash": "45b6810a",
+  "lockfileHash": "35a34c06",
+  "browserHash": "1ecd86b8",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "f6454b1c",
+      "fileHash": "5e2c91b5",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "b8908027",
+      "fileHash": "a71efcc1",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "93d9b308",
+      "fileHash": "85e780e7",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "0a2849a3",
+      "fileHash": "0eeaa1c4",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "fb920a85",
+      "fileHash": "22c9b5da",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "093b8da1",
+      "fileHash": "9ac3d7f1",
       "needsInterop": false
     },
     "primeng/api": {
       "src": "../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
       "file": "primeng_api.js",
-      "fileHash": "4bd53c3c",
+      "fileHash": "6022421d",
       "needsInterop": false
     },
     "primeng/carousel": {
       "src": "../../../../../node_modules/primeng/fesm2022/primeng-carousel.mjs",
       "file": "primeng_carousel.js",
-      "fileHash": "2e4bba49",
+      "fileHash": "a6c3bea3",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "47428c90",
+      "fileHash": "2f4fc2b3",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-T5MQC3WE": {
+      "file": "chunk-T5MQC3WE.js"
+    },
     "chunk-Y6VDGAZN": {
       "file": "chunk-Y6VDGAZN.js"
     },
     "chunk-2IRRX5HF": {
       "file": "chunk-2IRRX5HF.js"
-    },
-    "chunk-T5MQC3WE": {
-      "file": "chunk-T5MQC3WE.js"
     },
     "chunk-T76FZRMF": {
       "file": "chunk-T76FZRMF.js"

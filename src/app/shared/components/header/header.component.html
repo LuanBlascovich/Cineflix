@@ -6,10 +6,8 @@
         <nav class="nav-menu">
             <ul>
                 <li><a routerLink="/home" class="nav-link">HOME</a></li>
-                <li><a routerLink="/filmes" class="nav-link">FILMES</a></li>
-                <li><a routerLink="/categoria" class="nav-link">CATEGORIA</a></li>
                 <li *ngIf="usuarioLogado?.tipo === 'admin'">
-                    <a routerLink="/admin/form-filme" class="nav-link">DASHBOARD</a>
+                    <a routerLink="/admin/usuarios" class="nav-link">ADMIN</a>
                 </li>
                 <li><a routerLink="/sobre" class="nav-link">SOBRE</a></li>
             </ul>

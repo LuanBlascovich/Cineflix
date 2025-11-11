@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   erroLogin: string = '';
 
   constructor(private router: Router, private usuarioService: UsuarioService) {}
-  
+
   ngOnInit(): void {
     if (this.usuarioService.isLoggedIn()) {
       this.router.navigate(['/home']);
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
           this.usuarioService.login(user);
           alert('Login bem-sucedido!');
           this.router.navigate(
-            [user.tipo === 'admin' ? '/admin/dashboard' : '/home'],
+            [user.tipo === 'admin' ? '/admin/listagem-usuario' : '/home'],
             { replaceUrl: true }
           );
         } else {

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
+import { Router, ActivatedRoute, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Usuario } from '../../core/models/usuario.model';
 import { UsuarioService } from '../../core/services/usuarios.service';
@@ -12,17 +12,46 @@ import { UsuarioService } from '../../core/services/usuarios.service';
   templateUrl: './cadastrar.component.html',
   styleUrls: ['./cadastrar.component.css'],
 })
-export class CadastrarComponent {
+export class CadastrarComponent implements OnInit {
   nome: string = '';
   email: string = '';
   senha: string = '';
   confirmSenha: string = '';
   cpf: string = '';
   cpfInvalido: boolean = false;
+  usuarioId: number | null = null; // armazena o id se for edição
+  isEditMode: boolean = false; // indica se é edição
 
-  constructor(private router: Router, private usuarioService: UsuarioService) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private usuarioService: UsuarioService
+  ) {}
 
-  // Validação de CPF
+  ngOnInit() {
+    this.route.paramMap.subscribe((params) => {
+      const idParam = params.get('id');
+      if (idParam) {
+        this.usuarioId = Number(idParam);
+        this.isEditMode = true;
+        this.carregarUsuario(this.usuarioId);
+      }
+    });
+  }
+
+  carregarUsuario(id: number) {
+    this.usuarioService.getTodosUsuarios().subscribe((usuarios) => {
+      const usuario = usuarios.find((u) => u.id === id);
+      if (usuario) {
+        this.nome = usuario.nome;
+        this.email = usuario.email;
+        this.cpf = usuario.cpf;
+        this.senha = usuario.senha; // preenche a senha
+        this.confirmSenha = usuario.senha; // mantém a confirmação igual
+      }
+    });
+  }
+
   validarCPF(): boolean {
     const cpf = this.cpf.replace(/\D/g, '');
     if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
@@ -74,24 +103,38 @@ export class CadastrarComponent {
       return;
     }
 
-    const novoUsuario: Usuario = {
+    // Cria objeto de usuário com senha incluída
+    const usuario: Usuario = {
       nome: this.nome,
       email: this.email,
-      senha: this.senha,
       cpf: this.cpf,
       tipo: 'usuario',
+      senha: this.senha, // sempre envia a senha
     };
 
-    this.usuarioService.cadastrar(novoUsuario).subscribe({
-      next: () => {
-        alert('Cadastro realizado com sucesso!');
-        form.resetForm();
-        this.router.navigate(['/login']);
-      },
-      error: (err) => {
-        console.error(err);
-        alert('Ocorreu um erro ao cadastrar. Tente novamente.');
-      },
-    });
+    if (this.isEditMode && this.usuarioId) {
+      this.usuarioService.editarUsuario(this.usuarioId, usuario).subscribe({
+        next: () => {
+          alert('Usuário editado com sucesso!');
+          this.router.navigate(['/admin/usuarios']);
+        },
+        error: (err) => {
+          console.error(err);
+          alert('Ocorreu um erro ao editar. Tente novamente.');
+        },
+      });
+    } else {
+      this.usuarioService.cadastrar(usuario).subscribe({
+        next: () => {
+          alert('Cadastro realizado com sucesso!');
+          form.resetForm();
+          this.router.navigate(['/login']);
+        },
+        error: (err) => {
+          console.error(err);
+          alert('Ocorreu um erro ao cadastrar. Tente novamente.');
+        },
+      });
+    }
   }
 }

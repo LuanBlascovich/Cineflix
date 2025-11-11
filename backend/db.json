@@ -4,17 +4,25 @@
       "id": 1,
       "nome": "admin",
       "email": "admin@gmail.com",
-      "cpf": "00000000000",
+      "cpf": "0000000000",
       "senha": "1234",
       "tipo": "admin"
     },
     {
-      "nome": "Pedro",
+      "nome": "Pedro Henrique",
       "email": "pedro@gmail.com",
-      "senha": "123",
       "cpf": "12345678909",
       "tipo": "usuario",
+      "senha": "1234",
       "id": 2
+    },
+    {
+      "nome": "Luis",
+      "email": "l@gmail.com",
+      "cpf": "12345678909",
+      "tipo": "usuario",
+      "senha": "1234",
+      "id": 3
     }
   ],
   "filmes": [
