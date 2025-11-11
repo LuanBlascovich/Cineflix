@@ -1,0 +1,13 @@
+<section *ngFor="let genero of generos" class="carousel-section">
+  <h2 class="carousel-category">{{ genero }}</h2>
+
+  <p-carousel [value]="filmesPorGenero[genero]" [numVisible]="6" [numScroll]="3" [circular]="true"
+    [showIndicators]="false" [showNavigators]="true" class="carousel-container">
+    <ng-template let-filme pTemplate="item">
+      <div class="carousel-item" (click)="verDetalhesFilme(filme.id)">
+        <img [src]="filme.capa" [alt]="filme.titulo" class="carousel-image" />
+        <p class="carousel-title">{{ filme.titulo }}</p>
+      </div>
+    </ng-template>
+  </p-carousel>
+</section>

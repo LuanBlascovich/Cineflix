@@ -1,0 +1,37 @@
+<div class="lista-container">
+  <h1>Lista de Filmes</h1>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      placeholder="Pesquisar filme..."
+      [(ngModel)]="termoBusca"
+      (input)="filtrarFilmes()"
+    />
+  </div>
+
+  <table class="tabela-filmes" *ngIf="filmesFiltrados.length > 0; else semFilmes">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Gênero</th>
+        <th>Ano</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let filme of filmesFiltrados">
+        <td>{{ filme.titulo }}</td>
+        <td>{{ filme.genero }}</td>
+        <td>{{ filme.ano }}</td>
+        <td>
+          <button class="btn-editar" (click)="editarFilme(filme.id)">Editar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #semFilmes>
+    <p class="mensagem-vazia">Nenhum filme encontrado.</p>
+  </ng-template>
+</div>

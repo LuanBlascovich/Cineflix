@@ -1,0 +1,620 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Abracadabra (Hocus Pocus)",
+      "duracao": "1h 36min",
+      "descricao": "Três bruxas ressuscitam em Salem e causam confusão durante a noite de Halloween.",
+      "capa": "assets/images/filmes-banners/abracadabra.png",
+      "generos": ["Comédia", "Fantasia"],
+      "anoLancamento": 1993
+    },
+    {
+      "id": 2,
+      "titulo": "Abracadabra 2",
+      "duracao": "1h 42min",
+      "descricao": "Continuação das aventuras das bruxas em Salem.",
+      "capa": "assets/images/filmes-banners/abracadabra-2.jpg",
+      "generos": ["Comédia", "Fantasia"],
+      "anoLancamento": 2022
+    },
+    {
+      "id": 3,
+      "titulo": "Aladdin (1992)",
+      "duracao": "1h 28min",
+      "descricao": "Um jovem ladrão encontra uma lâmpada mágica e o gênio que pode mudar sua vida.",
+      "capa": "assets/images/filmes-banners/aladdin-1992.jpeg",
+      "generos": [
+        "Animação",
+        "Fantasia",
+        "Musical",
+        "Romance",
+        "Ação e Aventura",
+        "Família"
+      ],
+      "anoLancamento": 1992
+    },
+    {
+      "id": 4,
+      "titulo": "Aladdin (2019)",
+      "duracao": "2h 8min",
+      "descricao": "Versão live-action da clássica história de Aladdin, Jasmine e o Gênio.",
+      "capa": "assets/images/filmes-banners/aladdin-2019.jpeg",
+      "generos": ["Ação e Aventura", "Fantasia", "Musical", "Romance"],
+      "anoLancamento": 2019
+    },
+    {
+      "id": 5,
+      "titulo": "Alice no País das Maravilhas",
+      "duracao": "1h 15min",
+      "descricao": "Alice cai em um mundo mágico cheio de criaturas excêntricas.",
+      "capa": "assets/images/filmes-banners/alice.jpg",
+      "generos": ["Animação", "Fantasia", "Musical", "Família"],
+      "anoLancamento": 1951
+    },
+    {
+      "id": 6,
+      "titulo": "Aristogatas",
+      "duracao": "1h 18min",
+      "descricao": "Uma família de gatos aristocráticos enfrenta aventuras e vilões para voltar para casa.",
+      "capa": "assets/images/filmes-banners/aristogatas.jpeg",
+      "generos": ["Animação", "Comédia", "Família"],
+      "anoLancamento": 1970
+    },
+    {
+      "id": 7,
+      "titulo": "As Crônicas de Nárnia: A Viagem do Peregrino da Alvorada",
+      "duracao": "1h 53min",
+      "descricao": "Os irmãos Pevensie partem em uma jornada pelo mundo mágico de Nárnia.",
+      "capa": "assets/images/filmes-banners/narnia-viagem.jpg",
+      "generos": ["Ação e Aventura", "Fantasia", "Família"],
+      "anoLancamento": 2010
+    },
+    {
+      "id": 8,
+      "titulo": "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa",
+      "duracao": "2h 23min",
+      "descricao": "Quatro irmãos entram em Nárnia e ajudam a combater a Feiticeira Branca.",
+      "capa": "assets/images/filmes-banners/narnia-leao.jpg",
+      "generos": ["Ação e Aventura", "Fantasia", "Família"],
+      "anoLancamento": 2005
+    },
+    {
+      "id": 9,
+      "titulo": "As Crônicas de Nárnia: Príncipe Caspian",
+      "duracao": "2h 14min",
+      "descricao": "Os irmãos retornam a Nárnia para ajudar o jovem príncipe Caspian a recuperar o trono.",
+      "capa": "assets/images/filmes-banners/narnia-caspian.jpg",
+      "generos": ["Ação e Aventura", "Fantasia", "Família"],
+      "anoLancamento": 2008
+    },
+    {
+      "id": 10,
+      "titulo": "Bambi",
+      "duracao": "1h 15min",
+      "descricao": "A história de Bambi, um jovem cervo, e suas aventuras na floresta enquanto cresce.",
+      "capa": "assets/images/filmes-banners/bambi.jpg",
+      "generos": ["Animação", "Drama", "Musical", "Família"],
+      "anoLancamento": 1942
+    },
+    {
+      "id": 11,
+      "titulo": "Bernardo e Bianca",
+      "duracao": "1h 15min",
+      "descricao": "Dois ratos tentam salvar uma garota órfã de um vilão perigoso.",
+      "capa": "assets/images/filmes-banners/bernardo-bianca.jpg",
+      "generos": ["Animação", "Aventura", "Família"],
+      "anoLancamento": 1977
+    },
+    {
+      "id": 12,
+      "titulo": "Zootopia",
+      "duracao": "1h 48min",
+      "descricao": "Judy Hopps, uma coelha policial, resolve crimes em uma cidade de animais antropomórficos.",
+      "capa": "assets/images/filmes-banners/zootopia.jpg",
+      "generos": ["Animação", "Comédia", "Ação e Aventura", "Família"],
+      "anoLancamento": 2016
+    },
+    {
+      "id": 13,
+      "titulo": "Bolt: Supercão",
+      "duracao": "1h 36min",
+      "descricao": "Um cão estrela de TV acredita que tem superpoderes e embarca em aventuras para salvar sua dona.",
+      "capa": "assets/images/filmes-banners/bolt.jpg",
+      "generos": ["Animação", "Comédia", "Ação e Aventura", "Família"],
+      "anoLancamento": 2008
+    },
+    {
+      "id": 14,
+      "titulo": "Branca de Neve e os Sete Anões",
+      "duracao": "1h 28min",
+      "descricao": "Uma princesa foge da madrasta e encontra refúgio com sete anões em uma floresta encantada.",
+      "capa": "assets/images/filmes-banners/branca-neve.webp",
+      "generos": ["Animação", "Fantasia", "Musical", "Romance", "Família"],
+      "anoLancamento": 1937
+    },
+    {
+      "id": 15,
+      "titulo": "Cinderela",
+      "duracao": "1h 15min",
+      "descricao": "Uma jovem sofre com a madrasta e irmãs malvadas, mas encontra seu príncipe encantado.",
+      "capa": "assets/images/filmes-banners/cinderela.webp",
+      "generos": ["Animação", "Fantasia", "Musical", "Romance", "Família"],
+      "anoLancamento": 1950
+    },
+    {
+      "id": 16,
+      "titulo": "Cruella",
+      "duracao": "2h 14min",
+      "descricao": "A origem da vilã Cruella de Vil e suas primeiras aventuras no mundo da moda.",
+      "capa": "assets/images/filmes-banners/cruella.jpg",
+      "generos": ["Comédia", "Fantasia", "Ação", "Família"],
+      "anoLancamento": 2021
+    },
+    {
+      "id": 17,
+      "titulo": "Detona Ralph",
+      "duracao": "1h 41min",
+      "descricao": "Um vilão de videogame decide se tornar herói e embarca em uma jornada por diferentes jogos.",
+      "capa": "assets/images/filmes-banners/detona-ralph.jpg",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 2012
+    },
+    {
+      "id": 18,
+      "titulo": "Doze é Demais",
+      "duracao": "2h 3min",
+      "descricao": "Uma grande família enfrenta os desafios e confusões do dia a dia.",
+      "capa": "assets/images/filmes-banners/doze-e-demais.webp",
+      "generos": ["Comédia", "Família"],
+      "anoLancamento": 2003
+    },
+    {
+      "id": 19,
+      "titulo": "Doze é Demais 2",
+      "duracao": "2h 4min",
+      "descricao": "A família continua enfrentando confusões e aventuras em novas situações.",
+      "capa": "assets/images/filmes-banners/doze-e-demais-2.webp",
+      "generos": ["Comédia", "Família"],
+      "anoLancamento": 2005
+    },
+    {
+      "id": 20,
+      "titulo": "Dumbo",
+      "duracao": "1h 4min",
+      "descricao": "Um elefante com orelhas enormes aprende a voar e encontra seu lugar no circo.",
+      "capa": "assets/images/filmes-banners/dumbo.jpg",
+      "generos": ["Animação", "Drama", "Musical", "Família"],
+      "anoLancamento": 1941
+    },
+    {
+      "id": 21,
+      "titulo": "Encanto",
+      "duracao": "1h 39min",
+      "descricao": "Uma família mágica enfrenta desafios e descobre os segredos de seus poderes.",
+      "capa": "assets/images/filmes-banners/encanto.jpeg",
+      "generos": ["Animação", "Musical", "Fantasia", "Família", "Comédia"],
+      "anoLancamento": 2021
+    },
+    {
+      "id": 22,
+      "titulo": "Encantada",
+      "duracao": "1h 48min",
+      "descricao": "Uma princesa é transportada de um mundo animado para a vida real em Nova York.",
+      "capa": "assets/images/filmes-banners/encantada.jpg",
+      "generos": ["Comédia", "Fantasia", "Romance", "Musical", "Família"],
+      "anoLancamento": 2007
+    },
+    {
+      "id": 23,
+      "titulo": "Desencantada",
+      "duracao": "1h 50min",
+      "descricao": "Depois de muitos anos, a princesa deve enfrentar novos desafios e o amor verdadeiro.",
+      "capa": "assets/images/filmes-banners/desencantada.webp",
+      "generos": ["Comédia", "Fantasia", "Romance", "Musical", "Família"],
+      "anoLancamento": 2022
+    },
+    {
+      "id": 24,
+      "titulo": "Elementos",
+      "duracao": "1h 45min",
+      "descricao": "Jovens descobrem poderes mágicos e enfrentam aventuras cheias de fantasia.",
+      "capa": "assets/images/filmes-banners/elementos.webp",
+      "generos": [
+        "Animação",
+        "Ação e Aventura",
+        "Comédia",
+        "Família",
+        "Fantasia",
+        "Romance"
+      ],
+      "anoLancamento": 2023
+    },
+    {
+      "id": 25,
+      "titulo": "Fantasia",
+      "duracao": "2h 5min",
+      "descricao": "Uma série de segmentos animados combinando música clássica e imagens fantásticas.",
+      "capa": "assets/images/filmes-banners/fantasia.jpeg",
+      "generos": ["Animação", "Fantasia", "Musical", "Família"],
+      "anoLancamento": 1940
+    },
+    {
+      "id": 26,
+      "titulo": "Fantasia 2000",
+      "duracao": "1h 25min",
+      "descricao": "Continuação da clássica Fantasia com novas interpretações musicais e animações.",
+      "capa": "assets/images/filmes-banners/fantasia-2000.jpg",
+      "generos": ["Animação", "Fantasia", "Musical", "Família"],
+      "anoLancamento": 1999
+    },
+    {
+      "id": 27,
+      "titulo": "Frozen",
+      "duracao": "1h 42min",
+      "descricao": "A princesa Elsa deve controlar seus poderes de gelo enquanto sua irmã tenta salvá-la.",
+      "capa": "assets/images/filmes-banners/frozen.jpg",
+      "generos": ["Animação", "Fantasia", "Musical", "Romance", "Família"],
+      "anoLancamento": 2013
+    },
+    {
+      "id": 28,
+      "titulo": "Frozen 2",
+      "duracao": "1h 43min",
+      "descricao": "Elsa e Anna partem em uma jornada para descobrir a origem dos poderes da rainha do gelo.",
+      "capa": "assets/images/filmes-banners/frozen-2.webp",
+      "generos": ["Animação", "Musical", "Fantasia", "Família"],
+      "anoLancamento": 2019
+    },
+    {
+      "id": 29,
+      "titulo": "Hércules",
+      "duracao": "1h 32min",
+      "descricao": "Hércules descobre sua origem divina e enfrenta desafios para se tornar um verdadeiro herói.",
+      "capa": "assets/images/filmes-banners/hercules.jpg",
+      "generos": [
+        "Animação",
+        "Musical",
+        "Ação e Aventura",
+        "Comédia",
+        "Família"
+      ],
+      "anoLancamento": 1997
+    },
+    {
+      "id": 30,
+      "titulo": "Irmão Urso",
+      "duracao": "1h 23min",
+      "descricao": "Um jovem é transformado em urso e aprende lições valiosas sobre amor e amizade.",
+      "capa": "assets/images/filmes-banners/irmao-urso.jpg",
+      "generos": ["Animação", "Drama", "Musical", "Família"],
+      "anoLancamento": 2003
+    },
+    {
+      "id": 31,
+      "titulo": "John Carter: Entre Dois Mundos",
+      "duracao": "2h 12min",
+      "descricao": "Um veterano da Guerra Civil é transportado para Marte e se envolve em uma guerra interplanetária.",
+      "capa": "assets/images/filmes-banners/john-carter.jpg",
+      "generos": ["Ação e Aventura", "Ficção Científica"],
+      "anoLancamento": 2012
+    },
+    {
+      "id": 32,
+      "titulo": "Lilo & Stitch",
+      "duracao": "1h 25min",
+      "descricao": "Uma história sobre amizade e família entre uma garota e seu experimento alienígena.",
+      "capa": "assets/images/filmes-banners/lilo-e-stitch.jpg",
+      "generos": ["Animação", "Comédia", "Família"],
+      "anoLancamento": 2002
+    },
+    {
+      "id": 33,
+      "titulo": "Lizzie McGuire: Um Sonho Popstar",
+      "duracao": "1h 36min",
+      "descricao": "Lizzie vive uma aventura musical enquanto tenta se tornar uma estrela pop.",
+      "capa": "assets/images/filmes-banners/lizzie-mcguire-um-sonho-popstar.webp",
+      "generos": ["Comédia", "Musical"],
+      "anoLancamento": 2003
+    },
+    {
+      "id": 34,
+      "titulo": "Luca",
+      "duracao": "1h 35min",
+      "descricao": "Dois amigos vivem um verão inesquecível em uma cidade costeira italiana.",
+      "capa": "assets/images/filmes-banners/luca.webp",
+      "generos": ["Animação", "Comédia", "Família"],
+      "anoLancamento": 2021
+    },
+    {
+      "id": 35,
+      "titulo": "Mogli - O Menino Lobo",
+      "duracao": "1h 18min",
+      "descricao": "Um garoto criado por lobos na selva enfrenta perigos e aprende sobre amizade.",
+      "capa": "assets/images/filmes-banners/mogli-o-menino-lobo.jpg",
+      "generos": ["Animação", "Aventura", "Família"],
+      "anoLancamento": 1967
+    },
+    {
+      "id": 36,
+      "titulo": "Moana",
+      "duracao": "1h 47min",
+      "descricao": "Moana parte em uma aventura pelo oceano para salvar seu povo com a ajuda do semideus Maui.",
+      "capa": "assets/images/filmes-banners/moana.jpg",
+      "generos": ["Animação", "Ação e Aventura", "Musical", "Família"],
+      "anoLancamento": 2016
+    },
+    {
+      "id": 37,
+      "titulo": "Mulan (1998)",
+      "duracao": "1h 28min",
+      "descricao": "Mulan se disfarça de homem para lutar no exército e proteger seu pai.",
+      "capa": "assets/images/filmes-banners/mulan-1998.webp",
+      "generos": ["Animação", "Ação e Aventura", "Família"],
+      "anoLancamento": 1998
+    },
+    {
+      "id": 38,
+      "titulo": "Mulan (2020)",
+      "duracao": "1h 55min",
+      "descricao": "Versão live-action da história de Mulan, com batalhas épicas e aventura.",
+      "capa": "assets/images/filmes-banners/mulan-2020.webp",
+      "generos": ["Ação e Aventura", "Fantasia", "Drama", "Família"],
+      "anoLancamento": 2020
+    },
+    {
+      "id": 39,
+      "titulo": "O Galinho Chicken Little",
+      "duracao": "1h 25min",
+      "descricao": "Chicken Little tenta salvar a cidade de um ataque alienígena enquanto enfrenta desafios pessoais.",
+      "capa": "assets/images/filmes-banners/chicken-little.jpg",
+      "generos": ["Animação", "Comédia", "Família"],
+      "anoLancamento": 2005
+    },
+    {
+      "id": 40,
+      "titulo": "O Corcunda de Notre Dame",
+      "duracao": "1h 39min",
+      "descricao": "Quasímodo, o corcunda da catedral, vive aventuras e desafios enquanto protege a cidade.",
+      "capa": "assets/images/filmes-banners/corcunda-de-notre-dame.webp",
+      "generos": ["Animação", "Musical", "Drama", "Família"],
+      "anoLancamento": 1996
+    },
+    {
+      "id": 41,
+      "titulo": "O Estranho Mundo de Jack",
+      "duracao": "1h 16min",
+      "descricao": "Jack Skellington, o rei da Cidade do Halloween, descobre o Natal e tenta incorporá-lo ao seu mundo.",
+      "capa": "assets/images/filmes-banners/estranho-mundo-jack.jpg",
+      "generos": ["Animação", "Fantasia", "Musical", "Família"],
+      "anoLancamento": 1993
+    },
+    {
+      "id": 42,
+      "titulo": "O Rei Leão (1994)",
+      "duracao": "1h 28min",
+      "descricao": "A jornada de Simba para se tornar rei da Savana, enfrentando desafios e aprendendo sobre coragem.",
+      "capa": "assets/images/filmes-banners/rei-leao-1994.jpg",
+      "generos": ["Animação", "Ação e Aventura", "Musical", "Drama", "Família"],
+      "anoLancamento": 1994
+    },
+    {
+      "id": 43,
+      "titulo": "O Rei Leão (2019)",
+      "duracao": "1h 58min",
+      "descricao": "Versão live-action com tecnologia de ponta da história de Simba, Timão e Pumba.",
+      "capa": "assets/images/filmes-banners/rei-leao-2019.jpg",
+      "generos": ["Animação", "Ação e Aventura", "Drama", "Família"],
+      "anoLancamento": 2019
+    },
+    {
+      "id": 44,
+      "titulo": "Peter Pan",
+      "duracao": "1h 16min",
+      "descricao": "Peter Pan leva Wendy e seus irmãos para a Terra do Nunca, enfrentando o Capitão Gancho.",
+      "capa": "assets/images/filmes-banners/peter-pan.webp",
+      "generos": ["Animação", "Ação e Aventura", "Fantasia", "Família"],
+      "anoLancamento": 1953
+    },
+    {
+      "id": 45,
+      "titulo": "Pinóquio",
+      "duracao": "1h 26min",
+      "descricao": "Um boneco de madeira deseja se tornar um menino de verdade e enfrenta grandes aventuras.",
+      "capa": "assets/images/filmes-banners/pinoquio.webp",
+      "generos": ["Animação", "Fantasia", "Musical", "Família"],
+      "anoLancamento": 1940
+    },
+    {
+      "id": 46,
+      "titulo": "Procurando Nemo",
+      "duracao": "1h 40min",
+      "descricao": "Marlin atravessa o oceano para resgatar seu filho Nemo, enfrentando perigos e fazendo amigos.",
+      "capa": "assets/images/filmes-banners/procurando-nemo.webp",
+      "generos": ["Animação", "Ação e Aventura", "Comédia", "Família"],
+      "anoLancamento": 2003
+    },
+    {
+      "id": 47,
+      "titulo": "Procurando Dory",
+      "duracao": "1h 37min",
+      "descricao": "Dory parte em busca de sua família, enfrentando desafios e encontrando amigos pelo caminho.",
+      "capa": "assets/images/filmes-banners/procurando-dory.webp",
+      "generos": ["Animação", "Ação e Aventura", "Comédia", "Família"],
+      "anoLancamento": 2016
+    },
+    {
+      "id": 48,
+      "titulo": "Rapunzel – Enrolados",
+      "duracao": "1h 40min",
+      "descricao": "Rapunzel, com seus longos cabelos mágicos, sai da torre e descobre o mundo.",
+      "capa": "assets/images/filmes-banners/rapunzel-enrolados.webp",
+      "generos": ["Animação", "Fantasia", "Musical", "Comédia", "Família"],
+      "anoLancamento": 2010
+    },
+    {
+      "id": 49,
+      "titulo": "Ratatouille",
+      "duracao": "1h 51min",
+      "descricao": "Um rato sonha em se tornar chef de cozinha em Paris e vive aventuras culinárias.",
+      "capa": "assets/images/filmes-banners/ratatouille.webp",
+      "generos": ["Animação", "Comédia", "Família"],
+      "anoLancamento": 2007
+    },
+    {
+      "id": 50,
+      "titulo": "Robin Hood",
+      "duracao": "1h 23min",
+      "descricao": "Robin Hood rouba dos ricos para ajudar os pobres, com a ajuda de seus amigos da floresta.",
+      "capa": "assets/images/filmes-banners/robin-hood.webp",
+      "generos": ["Animação", "Ação e Aventura", "Comédia", "Família"],
+      "anoLancamento": 1973
+    },
+    {
+      "id": 51,
+      "titulo": "A Pequena Sereia",
+      "duracao": "1h 23min",
+      "descricao": "Ariel, uma jovem sereia, deseja viver no mundo humano e se apaixona pelo príncipe Eric.",
+      "capa": "assets/images/filmes-banners/pequena-sereia.webp",
+      "generos": ["Animação", "Fantasia", "Musical", "Romance", "Família"],
+      "anoLancamento": 1989
+    },
+    {
+      "id": 52,
+      "titulo": "A Bela e a Fera (1991)",
+      "duracao": "1h 24min",
+      "descricao": "Uma jovem aprende a amar a Fera, quebrando o feitiço que o transformou.",
+      "capa": "assets/images/filmes-banners/bela-fera.webp",
+      "generos": ["Animação", "Fantasia", "Musical", "Romance", "Família"],
+      "anoLancamento": 1991
+    },
+    {
+      "id": 53,
+      "titulo": "A Bela e a Fera (2017)",
+      "duracao": "2h 9min",
+      "descricao": "Versão live-action da clássica história de amor da Bela e a Fera.",
+      "capa": "assets/images/filmes-banners/bela-fera-2017.webp",
+      "generos": [
+        "Ação e Aventura",
+        "Fantasia",
+        "Romance",
+        "Musical",
+        "Família"
+      ],
+      "anoLancamento": 2017
+    },
+    {
+      "id": 54,
+      "titulo": "Toy Story",
+      "duracao": "1h 21min",
+      "descricao": "Os brinquedos ganham vida quando os humanos não estão por perto e enfrentam aventuras para se manterem unidos.",
+      "capa": "assets/images/filmes-banners/toy-story.webp",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 1995
+    },
+    {
+      "id": 55,
+      "titulo": "Toy Story 2",
+      "duracao": "1h 32min",
+      "descricao": "Woody é sequestrado e os amigos tentam resgatá-lo, enfrentando novas aventuras.",
+      "capa": "assets/images/filmes-banners/toy-story-2.webp",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 1999
+    },
+    {
+      "id": 56,
+      "titulo": "Toy Story 3",
+      "duracao": "1h 43min",
+      "descricao": "Andy está indo para a faculdade e os brinquedos enfrentam mudanças e desafios.",
+      "capa": "assets/images/filmes-banners/toy-story-3.webp",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 2010
+    },
+    {
+      "id": 57,
+      "titulo": "Toy Story 4",
+      "duracao": "1h 40min",
+      "descricao": "Woody encontra novos amigos e enfrenta desafios enquanto descobre seu propósito.",
+      "capa": "assets/images/filmes-banners/toy-story-4.webp",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 2019
+    },
+    {
+      "id": 58,
+      "titulo": "Valente",
+      "duracao": "1h 43min",
+      "descricao": "Merida desafia tradições e tenta mudar seu destino em um reino cheio de magia.",
+      "capa": "assets/images/filmes-banners/valente.webp",
+      "generos": ["Animação", "Fantasia", "Ação e Aventura", "Família"],
+      "anoLancamento": 2012
+    },
+    {
+      "id": 59,
+      "titulo": "Wall-E",
+      "duracao": "1h 38min",
+      "descricao": "Um robô solitário limpa a Terra enquanto embarca em uma aventura pelo espaço.",
+      "capa": "assets/images/filmes-banners/wall-e.webp",
+      "generos": [
+        "Animação",
+        "Ação e Aventura",
+        "Família",
+        "Ficção Científica"
+      ],
+      "anoLancamento": 2008
+    },
+    {
+      "id": 60,
+      "titulo": "Wreck-It Ralph",
+      "duracao": "1h 41min",
+      "descricao": "Ralph, o vilão de um jogo de arcade, decide se tornar herói e embarca em aventuras em outros jogos.",
+      "capa": "assets/images/filmes-banners/wreck-it-ralph.webp",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 2012
+    },
+    {
+      "id": 61,
+      "titulo": "Zootopia",
+      "duracao": "1h 48min",
+      "descricao": "Judy Hopps, a primeira coelha policial, resolve crimes em uma cidade de animais antropomórficos.",
+      "capa": "assets/images/filmes-banners/zootopia.webp",
+      "generos": ["Animação", "Comédia", "Família", "Ação e Aventura"],
+      "anoLancamento": 2016
+    },
+    {
+      "id": 62,
+      "titulo": "Frozen II",
+      "duracao": "1h 43min",
+      "descricao": "Elsa e Anna partem em uma jornada para descobrir a origem dos poderes da rainha do gelo.",
+      "capa": "assets/images/filmes-banners/frozen-2.webp",
+      "generos": ["Animação", "Musical", "Fantasia", "Família"],
+      "anoLancamento": 2019
+    },
+    {
+      "id": 63,
+      "titulo": "Encanto",
+      "duracao": "1h 39min",
+      "descricao": "Uma família mágica enfrenta desafios e descobre os segredos de seus poderes.",
+      "capa": "assets/images/filmes-banners/encanto.webp",
+      "generos": ["Animação", "Musical", "Fantasia", "Família"],
+      "anoLancamento": 2021
+    },
+    {
+      "id": 64,
+      "titulo": "Raya e o Último Dragão",
+      "duracao": "1h 47min",
+      "descricao": "Raya embarca em uma missão para reunir os pedaços de um cristal mágico e salvar seu reino.",
+      "capa": "assets/images/filmes-banners/raya.webp",
+      "generos": ["Animação", "Ação e Aventura", "Fantasia", "Família"],
+      "anoLancamento": 2021
+    },
+    {
+      "id": 65,
+      "titulo": "Encantada",
+      "duracao": "1h 48min",
+      "descricao": "Uma princesa é transportada de um mundo animado para a vida real em Nova York.",
+      "capa": "assets/images/filmes-banners/encantada.webp",
+      "generos": ["Comédia", "Fantasia", "Romance", "Musical", "Família"],
+      "anoLancamento": 2007
+    }
+  ]
+}

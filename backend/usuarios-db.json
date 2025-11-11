@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "admin",
+      "email": "admin@gmail.com",
+      "cpf": "00000000000",
+      "senha": "1234",
+      "tipo": "admin"
+    }
+  ]
+}
