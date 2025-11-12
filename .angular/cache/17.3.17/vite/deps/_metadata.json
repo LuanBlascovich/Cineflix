@@ -1,61 +1,61 @@
 {
-  "hash": "07cedf5e",
-  "configHash": "45b6810a",
+  "hash": "218c3578",
+  "configHash": "f1b44907",
   "lockfileHash": "35a34c06",
-  "browserHash": "1ecd86b8",
+  "browserHash": "0a46dfe5",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "5e2c91b5",
+      "fileHash": "ebbf1ee4",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "a71efcc1",
+      "fileHash": "6f48a403",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "85e780e7",
+      "fileHash": "5d20caf3",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "0eeaa1c4",
+      "fileHash": "75dfded4",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "22c9b5da",
+      "fileHash": "232a9614",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "9ac3d7f1",
+      "fileHash": "850bbf85",
       "needsInterop": false
     },
     "primeng/api": {
       "src": "../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
       "file": "primeng_api.js",
-      "fileHash": "6022421d",
+      "fileHash": "586b4df3",
       "needsInterop": false
     },
     "primeng/carousel": {
       "src": "../../../../../node_modules/primeng/fesm2022/primeng-carousel.mjs",
       "file": "primeng_carousel.js",
-      "fileHash": "a6c3bea3",
+      "fileHash": "c4c0904c",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "2f4fc2b3",
+      "fileHash": "46abb7da",
       "needsInterop": false
     }
   },

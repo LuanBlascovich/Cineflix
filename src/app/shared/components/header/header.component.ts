@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { UsuarioService } from '../../../core/services/usuarios.service';
@@ -13,6 +13,7 @@ import { Usuario } from '../../../core/models/usuario.model';
 })
 export class HeaderComponent implements OnInit {
   usuarioLogado: Usuario | null = null;
+  dropdownAtivo = false;
 
   constructor(private usuarioService: UsuarioService, private router: Router) {}
 
@@ -42,9 +43,25 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+
+toggleDropdown() {
+  this.dropdownAtivo = !this.dropdownAtivo;
+}
+
+
   logout(): void {
     this.usuarioService.logout();
     this.usuarioLogado = null;
+    this.dropdownAtivo = false;
     this.router.navigate(['/login']);
+  }
+
+  // 👇 Aqui está o HostListener separado corretamente
+  @HostListener('document:click', ['$event'])
+  fecharDropdownAoClicarFora(event: Event): void {
+    const target = event.target as HTMLElement;
+    if (!target.closest('.user-dropdown')) {
+      this.dropdownAtivo = false;
+    }
   }
 }

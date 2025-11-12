@@ -1,36 +1,47 @@
 <header class="header">
-    <div class="logo-container">
-        <a routerLink="/home">
-            <img class="logo" src="assets/images/logo.png" alt="Logo">
-        </a>
-        <nav class="nav-menu">
-            <ul>
-                <li><a routerLink="/home" class="nav-link">HOME</a></li>
-                <li *ngIf="usuarioLogado?.tipo === 'admin'">
-                    <a routerLink="/admin/usuarios" class="nav-link">ADMIN</a>
-                </li>
-                <li><a routerLink="/sobre" class="nav-link">SOBRE</a></li>
-            </ul>
-        </nav>
+  <div class="logo-container">
+    <a routerLink="/home">
+      <img class="logo" src="assets/images/logo.png" alt="Logo">
+    </a>
+    <nav class="nav-menu">
+      <ul>
+        <li><a routerLink="/home" class="nav-link">HOME</a></li>
+        <li *ngIf="usuarioLogado?.tipo === 'admin'">
+          <a routerLink="/admin/usuarios" class="nav-link">ADMIN</a>
+        </li>
+        <li><a routerLink="/sobre" class="nav-link">SOBRE</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-icons">
+    <div class="search-container" *ngIf="usuarioLogado">
+      <input type="text" class="search-input" placeholder="Pesquisar...">
+      <span class="material-symbols-outlined search-icon">search</span>
     </div>
-    <div class="header-icons">
-        <div class="search-container" *ngIf="usuarioLogado">
-            <input type="text" class="search-input" placeholder="Pesquisar...">
-            <span class="material-symbols-outlined search-icon">search</span>
-        </div>
-        <div *ngIf="!usuarioLogado">
-            <button class="user-button" (click)="irParaLogin()">
-                <span class="material-symbols-outlined user-icon">person</span>
-            </button>
-        </div>
-        <div class="user-status" *ngIf="usuarioLogado">
-            <span *ngIf="usuarioLogado.tipo === 'admin'" class="admin-text">
-                {{ usuarioLogado.email }}
-            </span>
-            <span *ngIf="usuarioLogado.tipo === 'usuario'" class="user-text">
-                {{ usuarioLogado.nome }}
-            </span>
-            <button class="logout-button" (click)="logout()">Sair</button>
-        </div>
+
+    <div *ngIf="!usuarioLogado">
+      <button class="user-button" (click)="irParaLogin()">
+        <span class="material-symbols-outlined user-icon">person</span>
+      </button>
     </div>
+
+    <div class="user-dropdown" *ngIf="usuarioLogado">
+  <button class="user-button" (click)="toggleDropdown()">
+    <span class="material-symbols-outlined user-icon">person</span>
+  </button>
+
+  <div class="dropdown-menu" [class.ativo]="dropdownAtivo">
+    <p class="user-name">
+      {{ usuarioLogado.nome | uppercase }}
+    </p>
+    <hr class="divisor">
+    <p class="user-email">
+      {{ usuarioLogado.email | lowercase }}
+    </p>
+    <button class="logout-link" (click)="logout()">Sair</button>
+  </div>
+</div>
+
+  </div>
 </header>

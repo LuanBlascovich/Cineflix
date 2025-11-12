@@ -149,3 +149,71 @@
   color: #0b1741;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
+
+.user-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  min-width: 180px;
+  text-align: center;
+}
+
+.dropdown-menu.ativo {
+  display: block;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.user-name {
+  color: #0b1741;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.user-email {
+  color: #333;
+  font-size: 13px;
+  text-transform: lowercase;
+  margin: 6px 0 10px;
+}
+
+.divisor {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 6px 0;
+}
+
+.logout-link {
+  background: none;
+  border: none;
+  color: #0b1741;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.logout-link:hover {
+  color: #0c6ec3;
+}
