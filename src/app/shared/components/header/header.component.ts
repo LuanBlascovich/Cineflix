@@ -35,6 +35,10 @@ export class HeaderComponent implements OnInit {
     return this.usuarioLogado?.tipo === 'usuario';
   }
 
+   get mostraPesquisar(): boolean {
+    return this.router.url.includes('/filmes');
+  }
+
   irParaLogin(): void {
     if (this.isLogged) {
       this.router.navigate([this.isAdmin ? '/admin/dashboard' : '/home']);
@@ -43,11 +47,9 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-
-toggleDropdown() {
-  this.dropdownAtivo = !this.dropdownAtivo;
-}
-
+  toggleDropdown() {
+    this.dropdownAtivo = !this.dropdownAtivo;
+  }
 
   logout(): void {
     this.usuarioService.logout();
@@ -64,4 +66,5 @@ toggleDropdown() {
       this.dropdownAtivo = false;
     }
   }
-}
+
+ }
