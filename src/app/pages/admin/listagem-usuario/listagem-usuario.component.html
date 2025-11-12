@@ -1,0 +1,49 @@
+<div class="admin-container">
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a routerLink="/admin/usuarios" class="active">Usuários</a></li>
+                <li><a routerLink="/admin/filmes">Filmes</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="header-table">
+            <h2>Listagem de Usuários</h2>
+            <button class="btn-cadastrar" routerLink="/cadastrar">
+                Cadastrar Usuário
+            </button>
+        </div>
+
+        <table class="tabela-usuarios">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CPF</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios">
+                    <td>{{ usuario.id }}</td>
+                    <td>{{ usuario.nome }}</td>
+                    <td>{{ usuario.email }}</td>
+                    <td>{{ usuario.cpf }}</td>
+                    <td>{{ usuario.tipo }}</td>
+                    <td class="acoes">
+                        <button class="btn-editar" [routerLink]="['/cadastrar', usuario.id]">
+                            Editar
+                        </button>
+                        <button class="btn-excluir" (click)="excluirUsuario(usuario)">
+                            Excluir
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>
