@@ -7,6 +7,7 @@ import { FilmeInfoComponent } from './pages/filme-info/filme-info.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { authGuard, adminGuard } from './core/guards/auth.guard';
 import { ListagemUsuarioComponent } from './pages/admin/listagem-usuario/listagem-usuario.component';
+import { FilmesComponent } from './pages/filmes/filmes.component';
 
 export const routes: Routes = [
   {
@@ -31,7 +32,7 @@ export const routes: Routes = [
   },
   {
     path: 'filmes',
-    component: HomeComponent,
+    component: FilmesComponent,
     canActivate: [authGuard],
   },
   {

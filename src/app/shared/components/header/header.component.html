@@ -6,6 +6,7 @@
     <nav class="nav-menu">
       <ul>
         <li><a routerLink="/home" class="nav-link">HOME</a></li>
+        <li><a routerLink="/filmes" class="nav-link">FILMES</a></li>
         <li *ngIf="usuarioLogado?.tipo === 'admin'">
           <a routerLink="/admin/usuarios" class="nav-link">ADMIN</a>
         </li>
@@ -27,21 +28,21 @@
     </div>
 
     <div class="user-dropdown" *ngIf="usuarioLogado">
-  <button class="user-button" (click)="toggleDropdown()">
-    <span class="material-symbols-outlined user-icon">person</span>
-  </button>
+      <button class="user-button" (click)="toggleDropdown()">
+        <span class="material-symbols-outlined user-icon">person</span>
+      </button>
 
-  <div class="dropdown-menu" [class.ativo]="dropdownAtivo">
-    <p class="user-name">
-      {{ usuarioLogado.nome | uppercase }}
-    </p>
-    <hr class="divisor">
-    <p class="user-email">
-      {{ usuarioLogado.email | lowercase }}
-    </p>
-    <button class="logout-link" (click)="logout()">Sair</button>
-  </div>
-</div>
+      <div class="dropdown-menu" [class.ativo]="dropdownAtivo">
+        <p class="user-name">
+          {{ usuarioLogado.nome | uppercase }}
+        </p>
+        <hr class="divisor">
+        <p class="user-email">
+          {{ usuarioLogado.email | lowercase }}
+        </p>
+        <button class="logout-link" (click)="logout()">Sair</button>
+      </div>
+    </div>
 
   </div>
 </header>

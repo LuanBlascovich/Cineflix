@@ -13,7 +13,6 @@
   color: #f9f9f9;
 }
 
-/* Imagem de fundo */
 .hero-image {
   position: absolute;
   top: 0;
@@ -23,34 +22,32 @@
   background-image: linear-gradient(
       to top,
       #0b1741 0%,
-      rgba(11, 23, 65, 0) 200px
+      rgba(11, 23, 65, 0) 400px
     ),
     url("/assets/images/banner.jpg");
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
 }
 
 .titulo-banner {
-  width: 319px; 
+  width: 319px;
   height: auto;
   object-fit: contain;
 }
 
-/* Gradiente inferior */
 .hero-image::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* altura do degradê */
+  height: 200px;
   background: linear-gradient(to top, #0b0f34 0%, transparent 100%);
   z-index: 2;
 }
 
-/* Conteúdo sobre a imagem */
 .information {
   position: absolute;
   bottom: 50px;
@@ -58,20 +55,19 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  z-index: 3; /* fica acima do gradiente */
+  z-index: 3;
 }
 
-/* Descrição do filme */
 .film-info {
   width: 719px;
   line-height: 1.5;
   font-size: 20px;
+  font-weight: 600;
 }
 
-/* Botão "VER MAIS" */
 .button-info {
   height: 48px;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: rgba(255, 225, 0, 0.7);
   display: flex;
   align-items: center;
@@ -86,54 +82,13 @@
   transform: scale(1.05);
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  .hero {
-    height: 700px;
-  }
-  .la-pelcula-de {
-    width: 500px;
-    font-size: 18px;
-  }
+.titulo-sessao {
+  font-family: "Work Sans", sans-serif;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 30px ;
 }
-
-@media (max-width: 768px) {
-  .hero {
-    height: 500px;
-  }
-  .information {
-    bottom: 30px;
-    left: 20px;
-  }
-  .la-pelcula-de {
-    width: 90%;
-    font-size: 16px;
-  }
-  .logo-icon {
-    width: 200px;
-  }
-}
-
-@media (max-width: 560px) {
-  .hero {
-    height: 400px;
-  }
-  .la-pelcula-de {
-    font-size: 14px;
-  }
-  .logo-icon {
-    width: 150px;
-  }
-}
-
-
-
-
-
-
-
-
-
 
 .carousel-section {
   padding: 40px 5%;
@@ -151,7 +106,6 @@
   width: 100%;
 }
 
-/* Card individual */
 .carousel-item {
   position: relative;
   border-radius: 10px;
@@ -165,7 +119,6 @@
   align-items: center;
 }
 
-/* Imagem dentro do card */
 .carousel-image {
   width: 90%;
   height: 90%;
@@ -175,14 +128,12 @@
   position: absolute;
 }
 
-/* Efeito hover */
 .carousel-item:hover {
   transform: scale(1.1);
   z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Botões de navegação */
 :host ::ng-deep .p-carousel-prev,
 :host ::ng-deep .p-carousel-next {
   width: 50px;
@@ -201,29 +152,60 @@
   transition: all 0.3s ease;
 }
 
-/* Hover dos botões */
 :host ::ng-deep .p-carousel-prev:hover,
 :host ::ng-deep .p-carousel-next:hover {
   color: #ffe100 !important;
   cursor: pointer;
 }
 
-/* Responsividade */
+/* ====== Responsividade ====== */
 @media (max-width: 1024px) {
+  .hero {
+    height: 700px;
+  }
+  .film-info {
+    width: 500px;
+    font-size: 18px;
+  }
   .carousel-item {
-    width: 160px;
-    height: 240px;
+    height: 300px;
+    width: 200px;
   }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+  .information {
+    bottom: 30px;
+    left: 20px;
+  }
+  .film-info {
+    width: 90%;
+    font-size: 16px;
+  }
+  .titulo-banner {
+    width: 200px;
+  }
   .carousel-item {
-    height: 160px;
+    height: 300px;
+    width: 200px;
   }
 }
 
 @media (max-width: 560px) {
+  .hero {
+    height: 400px;
+  }
+  .film-info {
+    font-size: 14px;
+  }
+  .titulo-banner {
+    width: 150px;
+  }
   .carousel-item {
-    height: 140px;
+    height: 300px;
+    width: 200px;
   }
 }

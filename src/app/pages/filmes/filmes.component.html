@@ -1,0 +1,9 @@
+<h2 class="titulo-sessao">FILMES</h2>
+
+<div class="cards-container">
+  <div class="card" *ngFor="let filme of filmes">
+    <img [src]="filme.capa" alt="{{filme.titulo}}" class="card-img" />
+    <h3>{{ filme.titulo }}</h3>
+    <p>{{ filme.duracao }}</p>
+  </div>
+</div>

@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
           this.usuarioService.login(user);
           alert('Login bem-sucedido!');
           this.router.navigate(
-            [user.tipo === 'admin' ? '/admin/listagem-usuario' : '/home'],
+            [user.tipo === 'admin' ? '/admin/usuarios' : '/home'],
             { replaceUrl: true }
           );
         } else {

@@ -1,7 +1,7 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "admin",
       "email": "admin@gmail.com",
       "cpf": "0000000000",
@@ -14,7 +14,7 @@
       "cpf": "12345678909",
       "tipo": "usuario",
       "senha": "1234",
-      "id": 2
+      "id": "2"
     },
     {
       "nome": "Luis",
@@ -22,12 +22,12 @@
       "cpf": "12345678909",
       "tipo": "usuario",
       "senha": "1234",
-      "id": 3
+      "id": "3"
     }
   ],
   "filmes": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Abracadabra (Hocus Pocus)",
       "duracao": "1h 36min",
       "descricao": "Três bruxas ressuscitam em Salem e causam confusão durante a noite de Halloween.",
@@ -39,7 +39,7 @@
       "anoLancamento": 1993
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Abracadabra 2",
       "duracao": "1h 42min",
       "descricao": "Continuação das aventuras das bruxas em Salem.",
@@ -51,7 +51,7 @@
       "anoLancamento": 2022
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Aladdin (1992)",
       "duracao": "1h 28min",
       "descricao": "Um jovem ladrão encontra uma lâmpada mágica e o gênio que pode mudar sua vida.",
@@ -67,7 +67,7 @@
       "anoLancamento": 1992
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Aladdin (2019)",
       "duracao": "2h 8min",
       "descricao": "Versão live-action da clássica história de Aladdin, Jasmine e o Gênio.",
@@ -81,7 +81,7 @@
       "anoLancamento": 2019
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "Alice no País das Maravilhas",
       "duracao": "1h 15min",
       "descricao": "Alice cai em um mundo mágico cheio de criaturas excêntricas.",
@@ -95,7 +95,7 @@
       "anoLancamento": 1951
     },
     {
-      "id": 6,
+      "id": "6",
       "titulo": "Aristogatas",
       "duracao": "1h 18min",
       "descricao": "Uma família de gatos aristocráticos enfrenta aventuras e vilões para voltar para casa.",
@@ -108,7 +108,7 @@
       "anoLancamento": 1970
     },
     {
-      "id": 7,
+      "id": "7",
       "titulo": "As Crônicas de Nárnia: A Viagem do Peregrino da Alvorada",
       "duracao": "1h 53min",
       "descricao": "Os irmãos Pevensie partem em uma jornada pelo mundo mágico de Nárnia.",
@@ -121,7 +121,7 @@
       "anoLancamento": 2010
     },
     {
-      "id": 8,
+      "id": "8",
       "titulo": "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa",
       "duracao": "2h 23min",
       "descricao": "Quatro irmãos entram em Nárnia e ajudam a combater a Feiticeira Branca.",
@@ -134,7 +134,7 @@
       "anoLancamento": 2005
     },
     {
-      "id": 9,
+      "id": "9",
       "titulo": "As Crônicas de Nárnia: Príncipe Caspian",
       "duracao": "2h 14min",
       "descricao": "Os irmãos retornam a Nárnia para ajudar o jovem príncipe Caspian a recuperar o trono.",
@@ -147,7 +147,7 @@
       "anoLancamento": 2008
     },
     {
-      "id": 10,
+      "id": "10",
       "titulo": "Bambi",
       "duracao": "1h 15min",
       "descricao": "A história de Bambi, um jovem cervo, e suas aventuras na floresta enquanto cresce.",
@@ -161,7 +161,7 @@
       "anoLancamento": 1942
     },
     {
-      "id": 11,
+      "id": "11",
       "titulo": "Bernardo e Bianca",
       "duracao": "1h 15min",
       "descricao": "Dois ratos tentam salvar uma garota órfã de um vilão perigoso.",
@@ -174,7 +174,7 @@
       "anoLancamento": 1977
     },
     {
-      "id": 12,
+      "id": "12",
       "titulo": "Zootopia",
       "duracao": "1h 48min",
       "descricao": "Judy Hopps, uma coelha policial, resolve crimes em uma cidade de animais antropomórficos.",
@@ -188,7 +188,7 @@
       "anoLancamento": 2016
     },
     {
-      "id": 13,
+      "id": "13",
       "titulo": "Bolt: Supercão",
       "duracao": "1h 36min",
       "descricao": "Um cão estrela de TV acredita que tem superpoderes e embarca em aventuras para salvar sua dona.",
@@ -202,7 +202,7 @@
       "anoLancamento": 2008
     },
     {
-      "id": 14,
+      "id": "14",
       "titulo": "Branca de Neve e os Sete Anões",
       "duracao": "1h 28min",
       "descricao": "Uma princesa foge da madrasta e encontra refúgio com sete anões em uma floresta encantada.",
@@ -217,7 +217,7 @@
       "anoLancamento": 1937
     },
     {
-      "id": 15,
+      "id": "15",
       "titulo": "Cinderela",
       "duracao": "1h 15min",
       "descricao": "Uma jovem sofre com a madrasta e irmãs malvadas, mas encontra seu príncipe encantado.",
@@ -232,7 +232,7 @@
       "anoLancamento": 1950
     },
     {
-      "id": 16,
+      "id": "16",
       "titulo": "Cruella",
       "duracao": "2h 14min",
       "descricao": "A origem da vilã Cruella de Vil e suas primeiras aventuras no mundo da moda.",
@@ -246,7 +246,7 @@
       "anoLancamento": 2021
     },
     {
-      "id": 17,
+      "id": "17",
       "titulo": "Detona Ralph",
       "duracao": "1h 41min",
       "descricao": "Um vilão de videogame decide se tornar herói e embarca em uma jornada por diferentes jogos.",
@@ -260,7 +260,7 @@
       "anoLancamento": 2012
     },
     {
-      "id": 18,
+      "id": "18",
       "titulo": "Doze é Demais",
       "duracao": "2h 3min",
       "descricao": "Uma grande família enfrenta os desafios e confusões do dia a dia.",
@@ -272,7 +272,7 @@
       "anoLancamento": 2003
     },
     {
-      "id": 19,
+      "id": "19",
       "titulo": "Doze é Demais 2",
       "duracao": "2h 4min",
       "descricao": "A família continua enfrentando confusões e aventuras em novas situações.",
@@ -284,7 +284,7 @@
       "anoLancamento": 2005
     },
     {
-      "id": 20,
+      "id": "20",
       "titulo": "Dumbo",
       "duracao": "1h 4min",
       "descricao": "Um elefante com orelhas enormes aprende a voar e encontra seu lugar no circo.",
@@ -298,7 +298,7 @@
       "anoLancamento": 1941
     },
     {
-      "id": 21,
+      "id": "21",
       "titulo": "Encanto",
       "duracao": "1h 39min",
       "descricao": "Uma família mágica enfrenta desafios e descobre os segredos de seus poderes.",
@@ -313,7 +313,7 @@
       "anoLancamento": 2021
     },
     {
-      "id": 22,
+      "id": "22",
       "titulo": "Encantada",
       "duracao": "1h 48min",
       "descricao": "Uma princesa é transportada de um mundo animado para a vida real em Nova York.",
@@ -328,7 +328,7 @@
       "anoLancamento": 2007
     },
     {
-      "id": 23,
+      "id": "23",
       "titulo": "Desencantada",
       "duracao": "1h 50min",
       "descricao": "Depois de muitos anos, a princesa deve enfrentar novos desafios e o amor verdadeiro.",
@@ -343,7 +343,7 @@
       "anoLancamento": 2022
     },
     {
-      "id": 24,
+      "id": "24",
       "titulo": "Elementos",
       "duracao": "1h 45min",
       "descricao": "Jovens descobrem poderes mágicos e enfrentam aventuras cheias de fantasia.",
@@ -359,7 +359,7 @@
       "anoLancamento": 2023
     },
     {
-      "id": 25,
+      "id": "25",
       "titulo": "Fantasia",
       "duracao": "2h 5min",
       "descricao": "Uma série de segmentos animados combinando música clássica e imagens fantásticas.",
@@ -373,7 +373,7 @@
       "anoLancamento": 1940
     },
     {
-      "id": 26,
+      "id": "26",
       "titulo": "Fantasia 2000",
       "duracao": "1h 25min",
       "descricao": "Continuação da clássica Fantasia com novas interpretações musicais e animações.",
@@ -387,7 +387,7 @@
       "anoLancamento": 1999
     },
     {
-      "id": 27,
+      "id": "27",
       "titulo": "Frozen",
       "duracao": "1h 42min",
       "descricao": "A princesa Elsa deve controlar seus poderes de gelo enquanto sua irmã tenta salvá-la.",
@@ -402,7 +402,7 @@
       "anoLancamento": 2013
     },
     {
-      "id": 28,
+      "id": "28",
       "titulo": "Frozen 2",
       "duracao": "1h 43min",
       "descricao": "Elsa e Anna partem em uma jornada para descobrir a origem dos poderes da rainha do gelo.",
@@ -416,7 +416,7 @@
       "anoLancamento": 2019
     },
     {
-      "id": 29,
+      "id": "29",
       "titulo": "Hércules",
       "duracao": "1h 32min",
       "descricao": "Hércules descobre sua origem divina e enfrenta desafios para se tornar um verdadeiro herói.",
@@ -431,7 +431,7 @@
       "anoLancamento": 1997
     },
     {
-      "id": 30,
+      "id": "30",
       "titulo": "Irmão Urso",
       "duracao": "1h 23min",
       "descricao": "Um jovem é transformado em urso e aprende lições valiosas sobre amor e amizade.",
@@ -445,7 +445,7 @@
       "anoLancamento": 2003
     },
     {
-      "id": 31,
+      "id": "31",
       "titulo": "John Carter: Entre Dois Mundos",
       "duracao": "2h 12min",
       "descricao": "Um veterano da Guerra Civil é transportado para Marte e se envolve em uma guerra interplanetária.",
@@ -457,7 +457,7 @@
       "anoLancamento": 2012
     },
     {
-      "id": 32,
+      "id": "32",
       "titulo": "Lilo & Stitch",
       "duracao": "1h 25min",
       "descricao": "Uma história sobre amizade e família entre uma garota e seu experimento alienígena.",
@@ -470,7 +470,7 @@
       "anoLancamento": 2002
     },
     {
-      "id": 33,
+      "id": "33",
       "titulo": "Lizzie McGuire: Um Sonho Popstar",
       "duracao": "1h 36min",
       "descricao": "Lizzie vive uma aventura musical enquanto tenta se tornar uma estrela pop.",
@@ -482,7 +482,7 @@
       "anoLancamento": 2003
     },
     {
-      "id": 34,
+      "id": "34",
       "titulo": "Luca",
       "duracao": "1h 35min",
       "descricao": "Dois amigos vivem um verão inesquecível em uma cidade costeira italiana.",
@@ -495,7 +495,7 @@
       "anoLancamento": 2021
     },
     {
-      "id": 35,
+      "id": "35",
       "titulo": "Mogli - O Menino Lobo",
       "duracao": "1h 18min",
       "descricao": "Um garoto criado por lobos na selva enfrenta perigos e aprende sobre amizade.",
@@ -508,7 +508,7 @@
       "anoLancamento": 1967
     },
     {
-      "id": 36,
+      "id": "36",
       "titulo": "Moana",
       "duracao": "1h 47min",
       "descricao": "Moana parte em uma aventura pelo oceano para salvar seu povo com a ajuda do semideus Maui.",
@@ -522,7 +522,7 @@
       "anoLancamento": 2016
     },
     {
-      "id": 37,
+      "id": "37",
       "titulo": "Mulan (1998)",
       "duracao": "1h 28min",
       "descricao": "Mulan se disfarça de homem para lutar no exército e proteger seu pai.",
@@ -535,7 +535,7 @@
       "anoLancamento": 1998
     },
     {
-      "id": 38,
+      "id": "38",
       "titulo": "Mulan (2020)",
       "duracao": "1h 55min",
       "descricao": "Versão live-action da história de Mulan, com batalhas épicas e aventura.",
@@ -549,7 +549,7 @@
       "anoLancamento": 2020
     },
     {
-      "id": 39,
+      "id": "39",
       "titulo": "O Galinho Chicken Little",
       "duracao": "1h 25min",
       "descricao": "Chicken Little tenta salvar a cidade de um ataque alienígena enquanto enfrenta desafios pessoais.",
@@ -562,7 +562,7 @@
       "anoLancamento": 2005
     },
     {
-      "id": 40,
+      "id": "40",
       "titulo": "O Corcunda de Notre Dame",
       "duracao": "1h 39min",
       "descricao": "Quasímodo, o corcunda da catedral, vive aventuras e desafios enquanto protege a cidade.",
@@ -576,7 +576,7 @@
       "anoLancamento": 1996
     },
     {
-      "id": 41,
+      "id": "41",
       "titulo": "O Estranho Mundo de Jack",
       "duracao": "1h 16min",
       "descricao": "Jack Skellington, o rei da Cidade do Halloween, descobre o Natal e tenta incorporá-lo ao seu mundo.",
@@ -590,7 +590,7 @@
       "anoLancamento": 1993
     },
     {
-      "id": 42,
+      "id": "42",
       "titulo": "O Rei Leão (1994)",
       "duracao": "1h 28min",
       "descricao": "A jornada de Simba para se tornar rei da Savana, enfrentando desafios e aprendendo sobre coragem.",
@@ -605,7 +605,7 @@
       "anoLancamento": 1994
     },
     {
-      "id": 43,
+      "id": "43",
       "titulo": "O Rei Leão (2019)",
       "duracao": "1h 58min",
       "descricao": "Versão live-action com tecnologia de ponta da história de Simba, Timão e Pumba.",
@@ -619,7 +619,7 @@
       "anoLancamento": 2019
     },
     {
-      "id": 44,
+      "id": "44",
       "titulo": "Peter Pan",
       "duracao": "1h 16min",
       "descricao": "Peter Pan leva Wendy e seus irmãos para a Terra do Nunca, enfrentando o Capitão Gancho.",
@@ -633,7 +633,7 @@
       "anoLancamento": 1953
     },
     {
-      "id": 45,
+      "id": "45",
       "titulo": "Pinóquio",
       "duracao": "1h 26min",
       "descricao": "Um boneco de madeira deseja se tornar um menino de verdade e enfrenta grandes aventuras.",
@@ -647,7 +647,7 @@
       "anoLancamento": 1940
     },
     {
-      "id": 46,
+      "id": "46",
       "titulo": "Procurando Nemo",
       "duracao": "1h 40min",
       "descricao": "Marlin atravessa o oceano para resgatar seu filho Nemo, enfrentando perigos e fazendo amigos.",
@@ -661,7 +661,7 @@
       "anoLancamento": 2003
     },
     {
-      "id": 47,
+      "id": "47",
       "titulo": "Procurando Dory",
       "duracao": "1h 37min",
       "descricao": "Dory parte em busca de sua família, enfrentando desafios e encontrando amigos pelo caminho.",
@@ -675,7 +675,7 @@
       "anoLancamento": 2016
     },
     {
-      "id": 48,
+      "id": "48",
       "titulo": "Rapunzel – Enrolados",
       "duracao": "1h 40min",
       "descricao": "Rapunzel, com seus longos cabelos mágicos, sai da torre e descobre o mundo.",
@@ -690,7 +690,7 @@
       "anoLancamento": 2010
     },
     {
-      "id": 49,
+      "id": "49",
       "titulo": "Ratatouille",
       "duracao": "1h 51min",
       "descricao": "Um rato sonha em se tornar chef de cozinha em Paris e vive aventuras culinárias.",
@@ -703,7 +703,7 @@
       "anoLancamento": 2007
     },
     {
-      "id": 50,
+      "id": "50",
       "titulo": "Robin Hood",
       "duracao": "1h 23min",
       "descricao": "Robin Hood rouba dos ricos para ajudar os pobres, com a ajuda de seus amigos da floresta.",
@@ -717,7 +717,7 @@
       "anoLancamento": 1973
     },
     {
-      "id": 51,
+      "id": "51",
       "titulo": "A Pequena Sereia",
       "duracao": "1h 23min",
       "descricao": "Ariel, uma jovem sereia, deseja viver no mundo humano e se apaixona pelo príncipe Eric.",
@@ -732,7 +732,7 @@
       "anoLancamento": 1989
     },
     {
-      "id": 52,
+      "id": "52",
       "titulo": "A Bela e a Fera (1991)",
       "duracao": "1h 24min",
       "descricao": "Uma jovem aprende a amar a Fera, quebrando o feitiço que o transformou.",
@@ -747,7 +747,7 @@
       "anoLancamento": 1991
     },
     {
-      "id": 53,
+      "id": "53",
       "titulo": "A Bela e a Fera (2017)",
       "duracao": "2h 9min",
       "descricao": "Versão live-action da clássica história de amor da Bela e a Fera.",
@@ -762,7 +762,7 @@
       "anoLancamento": 2017
     },
     {
-      "id": 54,
+      "id": "54",
       "titulo": "Toy Story",
       "duracao": "1h 21min",
       "descricao": "Os brinquedos ganham vida quando os humanos não estão por perto e enfrentam aventuras para se manterem unidos.",
@@ -776,7 +776,7 @@
       "anoLancamento": 1995
     },
     {
-      "id": 55,
+      "id": "55",
       "titulo": "Toy Story 2",
       "duracao": "1h 32min",
       "descricao": "Woody é sequestrado e os amigos tentam resgatá-lo, enfrentando novas aventuras.",
@@ -790,7 +790,7 @@
       "anoLancamento": 1999
     },
     {
-      "id": 56,
+      "id": "56",
       "titulo": "Toy Story 3",
       "duracao": "1h 43min",
       "descricao": "Andy está indo para a faculdade e os brinquedos enfrentam mudanças e desafios.",
@@ -804,7 +804,7 @@
       "anoLancamento": 2010
     },
     {
-      "id": 57,
+      "id": "57",
       "titulo": "Toy Story 4",
       "duracao": "1h 40min",
       "descricao": "Woody encontra novos amigos e enfrenta desafios enquanto descobre seu propósito.",
@@ -818,7 +818,7 @@
       "anoLancamento": 2019
     },
     {
-      "id": 58,
+      "id": "58",
       "titulo": "Valente",
       "duracao": "1h 43min",
       "descricao": "Merida desafia tradições e tenta mudar seu destino em um reino cheio de magia.",
@@ -832,7 +832,7 @@
       "anoLancamento": 2012
     },
     {
-      "id": 59,
+      "id": "59",
       "titulo": "Wall-E",
       "duracao": "1h 38min",
       "descricao": "Um robô solitário limpa a Terra enquanto embarca em uma aventura pelo espaço.",
@@ -846,7 +846,7 @@
       "anoLancamento": 2008
     },
     {
-      "id": 60,
+      "id": "60",
       "titulo": "Raya e o Último Dragão",
       "duracao": "1h 47min",
       "descricao": "Raya embarca em uma missão para reunir os pedaços de um cristal mágico e salvar seu reino.",
@@ -860,7 +860,7 @@
       "anoLancamento": 2021
     },
     {
-      "id": 61,
+      "id": "61",
       "titulo": "Homem de Ferro",
       "duracao": "2h 6min",
       "descricao": "Tony Stark, um gênio bilionário, constrói uma armadura de alta tecnologia para se tornar o herói Homem de Ferro.",
@@ -873,7 +873,7 @@
       "anoLancamento": 2008
     },
     {
-      "id": 62,
+      "id": "62",
       "titulo": "Capitão América: O Primeiro Vingador",
       "duracao": "2h 4min",
       "descricao": "Durante a Segunda Guerra Mundial, Steve Rogers se torna o supersoldado Capitão América e luta contra a Hydra.",
@@ -886,7 +886,7 @@
       "anoLancamento": 2011
     },
     {
-      "id": 63,
+      "id": "63",
       "titulo": "Thor",
       "duracao": "1h 55min",
       "descricao": "Banido de Asgard, o arrogante guerreiro Thor deve aprender o que significa ser um verdadeiro herói na Terra.",
@@ -899,7 +899,7 @@
       "anoLancamento": 2011
     },
     {
-      "id": 64,
+      "id": "64",
       "titulo": "Os Vingadores",
       "duracao": "2h 23min",
       "descricao": "Os maiores heróis da Terra se unem para impedir Loki e seu exército alienígena de dominar o planeta.",
@@ -912,7 +912,7 @@
       "anoLancamento": 2012
     },
     {
-      "id": 65,
+      "id": "65",
       "titulo": "Guardiões da Galáxia",
       "duracao": "2h 1min",
       "descricao": "Um grupo de desajustados intergalácticos deve unir forças para impedir um vilão que ameaça o universo.",
@@ -926,7 +926,7 @@
       "anoLancamento": 2014
     },
     {
-      "id": 66,
+      "id": "66",
       "titulo": "Pantera Negra",
       "duracao": "2h 14min",
       "descricao": "T'Challa retorna a Wakanda para assumir o trono, mas enfrenta um poderoso inimigo que ameaça seu reino.",
@@ -939,7 +939,7 @@
       "anoLancamento": 2018
     },
     {
-      "id": 67,
+      "id": "67",
       "titulo": "Vingadores: Guerra Infinita",
       "duracao": "2h 29min",
       "descricao": "Os Vingadores e seus aliados enfrentam Thanos em uma batalha épica para salvar o universo.",
@@ -952,7 +952,7 @@
       "anoLancamento": 2018
     },
     {
-      "id": 68,
+      "id": "68",
       "titulo": "Vingadores: Ultimato",
       "duracao": "3h 1min",
       "descricao": "Após o estalo de Thanos, os heróis restantes se unem para tentar reverter a destruição e restaurar o universo.",
@@ -965,7 +965,7 @@
       "anoLancamento": 2019
     },
     {
-      "id": 69,
+      "id": "69",
       "titulo": "Homem-Aranha: Sem Volta para Casa",
       "duracao": "2h 28min",
       "descricao": "Após sua identidade ser revelada, Peter Parker busca ajuda de Doutor Estranho, mas acaba abrindo o multiverso.",
@@ -978,7 +978,7 @@
       "anoLancamento": 2021
     },
     {
-      "id": 70,
+      "id": "70",
       "titulo": "The Marvels",
       "duracao": "1h 45min",
       "descricao": "Carol Danvers, Kamala Khan e Monica Rambeau precisam unir forças quando seus poderes começam a se entrelaçar.",
@@ -991,7 +991,7 @@
       "anoLancamento": 2023
     },
     {
-      "id": 71,
+      "id": "71",
       "titulo": "Tron: O Legado",
       "duracao": "2h 5min",
       "descricao": "Sam Flynn, filho do famoso programador Kevin Flynn, é transportado para um mundo digital e deve enfrentar perigos para encontrar o pai desaparecido.",
@@ -1004,7 +1004,7 @@
       "anoLancamento": 2010
     },
     {
-      "id": 72,
+      "id": "72",
       "titulo": "Tomorrowland: Um Lugar Onde Nada é Impossível",
       "duracao": "2h 10min",
       "descricao": "Uma jovem curiosa e um inventor desiludido embarcam em uma jornada para um mundo futurista repleto de segredos e possibilidades ilimitadas.",
@@ -1017,7 +1017,7 @@
       "anoLancamento": 2015
     },
     {
-      "id": 73,
+      "id": "73",
       "titulo": "O Aprendiz de Feiticeiro",
       "duracao": "1h 49min",
       "descricao": "Um jovem comum é escolhido por um poderoso feiticeiro para se tornar seu aprendiz e ajudar a proteger Nova York das forças das trevas.",
@@ -1030,7 +1030,7 @@
       "anoLancamento": 2010
     },
     {
-      "id": 74,
+      "id": "74",
       "titulo": "Malévola",
       "duracao": "1h 37min",
       "descricao": "A história não contada da vilã de A Bela Adormecida, mostrando as razões por trás de sua maldição e seu coração dividido entre o bem e o mal.",
@@ -1043,7 +1043,7 @@
       "anoLancamento": 2014
     },
     {
-      "id": 75,
+      "id": "75",
       "titulo": "Alice no País das Maravilhas",
       "duracao": "1h 48min",
       "descricao": "Alice retorna ao fantástico mundo do País das Maravilhas e embarca em uma jornada para derrotar a Rainha Vermelha e restaurar a harmonia.",
@@ -1056,7 +1056,7 @@
       "anoLancamento": 2010
     },
     {
-      "id": 76,
+      "id": "76",
       "titulo": "Piratas do Caribe: A Maldição do Pérola Negra",
       "duracao": "2h 23min",
       "descricao": "O excêntrico Capitão Jack Sparrow se une a Will Turner para resgatar Elizabeth e recuperar o navio Pérola Negra de piratas amaldiçoados.",
@@ -1069,7 +1069,7 @@
       "anoLancamento": 2003
     },
     {
-      "id": 77,
+      "id": "77",
       "titulo": "Piratas do Caribe: O Baú da Morte",
       "duracao": "2h 31min",
       "descricao": "Jack Sparrow tenta escapar de uma dívida de sangue com o lendário Davy Jones, enquanto Will e Elizabeth enfrentam novas ameaças.",
@@ -1082,7 +1082,7 @@
       "anoLancamento": 2006
     },
     {
-      "id": 78,
+      "id": "78",
       "titulo": "Piratas do Caribe: No Fim do Mundo",
       "duracao": "2h 49min",
       "descricao": "Com o mundo dos piratas em colapso, Will, Elizabeth e o Capitão Barbossa partem para resgatar Jack Sparrow do temível Davy Jones.",
@@ -1095,7 +1095,7 @@
       "anoLancamento": 2007
     },
     {
-      "id": 79,
+      "id": "79",
       "titulo": "Piratas do Caribe: Navegando em Águas Misteriosas",
       "duracao": "2h 17min",
       "descricao": "Jack Sparrow cruza o caminho de uma mulher misteriosa e embarca em uma jornada para encontrar a lendária Fonte da Juventude.",
@@ -1108,7 +1108,7 @@
       "anoLancamento": 2011
     },
     {
-      "id": 80,
+      "id": "80",
       "titulo": "Piratas do Caribe: A Vingança de Salazar",
       "duracao": "2h 9min",
       "descricao": "O Capitão Salazar escapa do Triângulo do Diabo e busca vingança contra Jack Sparrow, que precisa encontrar o Tridente de Poseidon para sobreviver.",
