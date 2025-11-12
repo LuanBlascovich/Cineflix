@@ -1,6 +1,142 @@
+* {
+  background: none;
+}
+.banner-section {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  font-family: "Work Sans", sans-serif;
+  color: #f9f9f9;
+}
+
+/* Imagem de fundo */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to top,
+      #0b1741 0%,
+      rgba(11, 23, 65, 0) 200px
+    ),
+    url("/assets/images/banner.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.titulo-banner {
+  width: 319px; 
+  height: auto;
+  object-fit: contain;
+}
+
+/* Gradiente inferior */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* altura do degradê */
+  background: linear-gradient(to top, #0b0f34 0%, transparent 100%);
+  z-index: 2;
+}
+
+/* Conteúdo sobre a imagem */
+.information {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  z-index: 3; /* fica acima do gradiente */
+}
+
+/* Descrição do filme */
+.film-info {
+  width: 719px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+/* Botão "VER MAIS" */
+.button-info {
+  height: 48px;
+  border-radius: 4px;
+  background-color: rgba(255, 225, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.button-info:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .hero {
+    height: 700px;
+  }
+  .la-pelcula-de {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+  .information {
+    bottom: 30px;
+    left: 20px;
+  }
+  .la-pelcula-de {
+    width: 90%;
+    font-size: 16px;
+  }
+  .logo-icon {
+    width: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    height: 400px;
+  }
+  .la-pelcula-de {
+    font-size: 14px;
+  }
+  .logo-icon {
+    width: 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 .carousel-section {
   padding: 40px 5%;
-  background: none;
 }
 
 .carousel-category {
@@ -15,47 +151,38 @@
   width: 100%;
 }
 
-:host ::ng-deep .p-carousel-content {
-  gap: 20px;
-  overflow: visible;
-}
-
+/* Card individual */
 .carousel-item {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  height: 250px;
+  height: 300px;
+  width: 200px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Imagem dentro do card */
+.carousel-image {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  position: absolute;
+}
+
+/* Efeito hover */
 .carousel-item:hover {
   transform: scale(1.1);
   z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-.carousel-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.4s ease;
-}
-
-.carousel-title {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  color: #fff;
-  font-weight: 600;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
-  text-align: center;
-  pointer-events: none;
-}
-
+/* Botões de navegação */
 :host ::ng-deep .p-carousel-prev,
 :host ::ng-deep .p-carousel-next {
   width: 50px;
@@ -74,29 +201,18 @@
   transition: all 0.3s ease;
 }
 
-:host ::ng-deep .p-carousel-prev button,
-:host ::ng-deep .p-carousel-next button {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  outline: none !important;
-}
-
+/* Hover dos botões */
 :host ::ng-deep .p-carousel-prev:hover,
-:host ::ng-deep .p-carousel-prev button:hover,
-:host ::ng-deep .p-carousel-next button:hover,
 :host ::ng-deep .p-carousel-next:hover {
   color: #ffe100 !important;
   cursor: pointer;
 }
 
+/* Responsividade */
 @media (max-width: 1024px) {
   .carousel-item {
-    height: 200px;
+    width: 160px;
+    height: 240px;
   }
 }
 
@@ -109,9 +225,5 @@
 @media (max-width: 560px) {
   .carousel-item {
     height: 140px;
-  }
-
-  .carousel-title {
-    font-size: 0.85rem;
   }
 }
