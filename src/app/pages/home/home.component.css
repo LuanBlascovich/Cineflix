@@ -158,7 +158,6 @@
   cursor: pointer;
 }
 
-/* ====== Responsividade ====== */
 @media (max-width: 1024px) {
   .hero {
     height: 700px;

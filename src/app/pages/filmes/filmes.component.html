@@ -1,9 +1,10 @@
 <h2 class="titulo-sessao">FILMES</h2>
-
+<div class="search-container">
+    <input type="text" placeholder="Buscar por nome..." [(ngModel)]="filtro" class="search-input" />
+    <span class="material-symbols-outlined search-icon">search</span>
+</div>
 <div class="cards-container">
-    <div class="card" *ngFor="let filme of filmes" (click)="verDetalhesFilme(filme.id)">
-        <img [src]="filme.capa" alt="{{filme.titulo}}" class="card-img" />
-        <h3>{{ filme.titulo }}</h3>
-        <p>{{ filme.duracao }}</p>
+    <div class="card" *ngFor="let filme of filmesFiltrados" (click)="verDetalhesFilme(filme.id)">
+        <img [src]="filme.capa" alt="{{ filme.titulo }}" class="card-img" />
     </div>
 </div>
