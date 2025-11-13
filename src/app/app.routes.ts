@@ -8,6 +8,7 @@ import { authGuard, adminGuard } from './core/guards/auth.guard';
 import { ListagemUsuarioComponent } from './pages/admin/listagem-usuario/listagem-usuario.component';
 import { ListagemFilmeComponent } from './pages/admin/listagem-filme/listagem-filme.component';
 import { CadastrarFilmeComponent } from './pages/admin/cadastrar-filme/cadastrar-filme.component';
+import { FilmesComponent } from './pages/filmes/filmes.component';
 
 export const routes: Routes = [
   {
@@ -32,7 +33,7 @@ export const routes: Routes = [
   },
   {
     path: 'filmes',
-    component: HomeComponent,
+    component: FilmesComponent,
     canActivate: [authGuard],
   },
   {

@@ -1,4 +1,8 @@
-/* Container geral */
+* {
+  background: none;
+  font-family: "Work Sans", sans-serif;
+}
+
 .login {
   width: 100%;
   min-height: 80vh;
@@ -74,6 +78,36 @@ textarea.ng-valid.ng-touched {
   border: 2px solid #3cb371;
 }
 
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ffe100;
+  cursor: pointer;
+}
+
+.checkbox-item label {
+  font-size: 15px;
+  color: #c8c9cb;
+  cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"]:hover + label {
+  color: #ffe100;
+}
+
+.mensagem-erro {
+  font-size: 13px;
+  color: #ff4d4d;
+  margin-top: 4px;
+}
+
 .botao-enviar {
   width: 100%;
   padding: 14px;
@@ -114,37 +148,6 @@ textarea.ng-valid.ng-touched {
 
 .link-login a:hover {
   text-decoration: underline;
-}
-
-.mensagem-erro {
-  font-size: 13px;
-  color: #ff4d4d;
-  margin-top: 4px;
-}
-
-/* Estilo dos checkboxes */
-.checkbox-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.checkbox-item input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #ffe100; /* cor do check */
-  cursor: pointer;
-}
-
-.checkbox-item label {
-  font-size: 15px;
-  color: #c8c9cb;
-  cursor: pointer;
-}
-
-.checkbox-item input[type="checkbox"]:hover + label {
-  color: #ffe100;
 }
 
 @media (max-width: 480px) {

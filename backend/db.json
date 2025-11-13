@@ -23,6 +23,14 @@
       "tipo": "usuario",
       "senha": "1234",
       "id": 3
+    },
+    {
+      "nome": "Jaqueline",
+      "email": "jaques@gmail.com",
+      "cpf": "72157494014",
+      "tipo": "usuario",
+      "senha": "1234",
+      "id": 4
     }
   ],
   "filmes": [
@@ -347,7 +355,7 @@
       "titulo": "Elementos",
       "duracao": "1h 45min",
       "descricao": "Jovens descobrem poderes mágicos e enfrentam aventuras cheias de fantasia.",
-      "capa": "assets/images/filmes-banners/elementos.webp",
+      "capa": "assets/images/filmes-banners/elementos.png",
       "generos": [
         "Animação",
         "Ação e Aventura",
@@ -1122,14 +1130,14 @@
     },
     {
       "id": 81,
-      "titulo": "A lady e o lobo: o bicho tá pegando!",
+      "titulo": "A lady e o lobo",
       "generos": [
         "Animação",
         "Ação e Aventura"
       ],
-      "descricao": "O brincalhão Humphrey e a elegante Kate se apaixonam, mas pertencem a alcateias diferentes e não podem se casar. Eles enfrentam muitas aventuras para convencer suas famílias de que, para um lobo, às vezes o amor vale mais que a tradição",
+      "descricao": "O brincalhão Humphrey e a elegante Kate se apaixonam, mas pertencem a alcateias diferentes e não podem se casar. Eles enfrentam muitas aventuras para convencer suas famílias de que, para um lobo, às vezes o amor vale mais que a tradição.",
       "capa": "assets/images/filmes-banners/lady_lobo.jpg",
-      "duracao": "2h 0m",
+      "duracao": "1h 28m",
       "anoLancamento": 2012
     }
   ]

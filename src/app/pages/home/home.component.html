@@ -1,3 +1,26 @@
+<section class="banner-section">
+  <div class="hero">
+    <div class="hero-image"></div>
+
+    <div class="information">
+      <img class="titulo-banner" src="/assets/images/titulo-banner.png" alt="Logo do filme">
+      <div class="film-info">
+        Luca vive aventuras com seu novo melhor amigo, mas a diversão é ameaçada por um segredo: seu amigo é um monstro
+        marinho de outro mundo que fica abaixo da superfície da água.
+      </div>
+      <div class="actions">
+        <div class="actions">
+          <button class="button-info" (click)="verDetalhesFilme(34)">
+            <b class="label">VER MAIS</b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 class="titulo-sessao">FILMES</h2>
+
 <section *ngFor="let genero of generos" class="carousel-section">
   <h2 class="carousel-category">{{ genero }}</h2>
 
