@@ -1119,6 +1119,18 @@
         "Ação"
       ],
       "anoLancamento": 2017
+    },
+    {
+      "id": 81,
+      "titulo": "A lady e o lobo: o bicho tá pegando!",
+      "generos": [
+        "Animação",
+        "Ação e Aventura"
+      ],
+      "descricao": "O brincalhão Humphrey e a elegante Kate se apaixonam, mas pertencem a alcateias diferentes e não podem se casar. Eles enfrentam muitas aventuras para convencer suas famílias de que, para um lobo, às vezes o amor vale mais que a tradição",
+      "capa": "assets/images/filmes-banners/lady_lobo.jpg",
+      "duracao": "2h 0m",
+      "anoLancamento": 2012
     }
   ]
 }

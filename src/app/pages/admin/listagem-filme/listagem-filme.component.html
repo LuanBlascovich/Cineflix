@@ -1,0 +1,47 @@
+<div class="admin-container">
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a routerLink="/admin/usuarios">Usuários</a></li>
+                <li><a routerLink="/admin/filmes" class="active">Filmes</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <div class="header-table">
+            <h2>Listagem de Filmes</h2>
+            <button class="btn-cadastrar" routerLink="/admin/cadastrar-filme">
+                Cadastrar Filme
+            </button>
+        </div>
+        <table class="tabela-filmes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Gêneros</th>
+                    <th>Duração</th>
+                    <th>Ano de Lançamento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let filme of filmes">
+                    <td>{{ filme.id }}</td>
+                    <td>{{ filme.titulo }}</td>
+                    <td>{{ filme.generos.join(' / ') }}</td>
+                    <td>{{ filme.duracao }}</td>
+                    <td>{{ filme.anoLancamento }}</td>
+                    <td class="acoes">
+                        <button class="btn-editar" [routerLink]="['/admin/cadastrar-filme', filme.id]">
+                            Editar
+                        </button>
+                        <button class="btn-excluir" (click)="excluirFilme(filme)">
+                            Excluir
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>

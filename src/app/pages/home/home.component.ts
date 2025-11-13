@@ -20,14 +20,10 @@ export class HomeComponent implements OnInit {
   constructor(private filmesService: FilmesService, private router: Router) {}
   ngOnInit(): void {
     this.filmesService.getFilmes().subscribe((filmes) => {
-      const usados = new Set<number>();
       this.generos.forEach((genero) => {
-        this.filmesPorGenero[genero] = filmes
-          .filter(
-            (f) => f.generos && f.generos.includes(genero) && !usados.has(f.id)
-          )
-          .slice(0, this.limite);
-        this.filmesPorGenero[genero].forEach((f) => usados.add(f.id));
+        this.filmesPorGenero[genero] = filmes.filter(
+          (f) => f.generos && f.generos.includes(genero)
+        );
       });
     });
   }
