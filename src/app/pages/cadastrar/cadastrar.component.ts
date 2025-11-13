@@ -19,8 +19,8 @@ export class CadastrarComponent implements OnInit {
   confirmSenha: string = '';
   cpf: string = '';
   cpfInvalido: boolean = false;
-  usuarioId: number | null = null; // armazena o id se for edição
-  isEditMode: boolean = false; // indica se é edição
+  usuarioId: number | null = null;
+  isEditMode: boolean = false;
 
   constructor(
     private router: Router,
@@ -46,8 +46,8 @@ export class CadastrarComponent implements OnInit {
         this.nome = usuario.nome;
         this.email = usuario.email;
         this.cpf = usuario.cpf;
-        this.senha = usuario.senha; // preenche a senha
-        this.confirmSenha = usuario.senha; // mantém a confirmação igual
+        this.senha = usuario.senha; 
+        this.confirmSenha = usuario.senha;
       }
     });
   }
@@ -103,13 +103,12 @@ export class CadastrarComponent implements OnInit {
       return;
     }
 
-    // Cria objeto de usuário com senha incluída
     const usuario: Usuario = {
       nome: this.nome,
       email: this.email,
       cpf: this.cpf,
       tipo: 'usuario',
-      senha: this.senha, // sempre envia a senha
+      senha: this.senha,
     };
 
     if (this.isEditMode && this.usuarioId) {

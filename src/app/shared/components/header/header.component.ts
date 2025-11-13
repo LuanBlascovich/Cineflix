@@ -43,11 +43,9 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-
-toggleDropdown() {
-  this.dropdownAtivo = !this.dropdownAtivo;
-}
-
+  toggleDropdown() {
+    this.dropdownAtivo = !this.dropdownAtivo;
+  }
 
   logout(): void {
     this.usuarioService.logout();
@@ -56,7 +54,6 @@ toggleDropdown() {
     this.router.navigate(['/login']);
   }
 
-  // 👇 Aqui está o HostListener separado corretamente
   @HostListener('document:click', ['$event'])
   fecharDropdownAoClicarFora(event: Event): void {
     const target = event.target as HTMLElement;
