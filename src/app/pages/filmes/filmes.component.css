@@ -9,7 +9,7 @@
   font-family: "Work Sans", sans-serif;
   color: #f9f9f9;
   text-align: center;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 50px 0;
   font-size: 30px;
   margin-top: 70px;
 }
@@ -18,27 +18,22 @@
   position: relative;
   display: block;
   width: 60%;
-  margin: 0 auto 25px;
+  margin: 20px auto 60px !important;
+  z-index: 20;
 }
+
 .search-input {
   width: 100%;
   height: 42px;
   padding: 0 45px 0 18px;
-
   border-radius: 20px;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
-
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.778);
   backdrop-filter: blur(8px);
-
   outline: none;
   font-size: 16px;
   color: #0b1741;
-
-  transition:
-    box-shadow 0.25s ease,
-    transform 0.20s ease,
-    background 0.25s ease,
+  transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.25s ease,
     border-color 0.25s ease;
 }
 
@@ -59,10 +54,6 @@
   transform: translateY(-2px);
 }
 
-.search-input::placeholder {
-  color: #888888;
-}
-
 .search-icon {
   position: absolute;
   right: 12px;
@@ -74,10 +65,6 @@
   cursor: pointer;
 }
 
-.search-input:focus {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
-
 .cards-container {
   display: flex;
   justify-content: center;
@@ -85,6 +72,7 @@
   flex-wrap: wrap;
   padding: 20px;
   min-height: 60vh;
+  width: 80%;
 }
 
 .card {
@@ -113,4 +101,63 @@
   transform: scale(1.1);
   z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.filmes-layout {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 20px;
+}
+
+.sidebar-filtro {
+  width: 20%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  margin-left: 70px;
+  margin-top: 20px;
+  height: fit-content;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.051);
+}
+
+.sidebar-filtro h3 {
+  text-align: left;
+  margin-bottom: 15px;
+  color: #ffe100;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.generos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.genero-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0b1741;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #23336b;
+  transition: 0.25s ease-in-out;
+  font-size: 14px;
+  color: #f9f9f9;
+}
+
+.genero-item:hover {
+  background: #17265e;
+  transform: scale(1.03);
+  box-shadow: 0 0 8px rgba(0, 140, 255, 0.4);
+}
+
+.genero-item input {
+  accent-color: #ffe100;
+  transform: scale(1.2);
+  cursor: pointer;
 }

@@ -1,10 +1,24 @@
 <h2 class="titulo-sessao">FILMES</h2>
+
 <div class="search-container">
     <input type="text" placeholder="Buscar por nome..." [(ngModel)]="filtro" class="search-input" />
     <span class="material-symbols-outlined search-icon">search</span>
 </div>
-<div class="cards-container">
-    <div class="card" *ngFor="let filme of filmesFiltrados" (click)="verDetalhesFilme(filme.id)">
-        <img [src]="filme.capa" alt="{{ filme.titulo }}" class="card-img" />
+
+<div class="filmes-layout">
+    <aside class="sidebar-filtro">
+        <h3>Filtrar por gênero</h3>
+        <div class="generos-lista">
+            <label class="genero-item" *ngFor="let genero of generosDisponiveis">
+                <input type="checkbox" [checked]="generosSelecionados.includes(genero)"
+                    (change)="toggleGenero(genero, $event)" />
+                {{ genero }}
+            </label>
+        </div>
+    </aside>
+    <div class="cards-container">
+        <div class="card" *ngFor="let filme of filmesFiltrados" (click)="verDetalhesFilme(filme.id)">
+            <img [src]="filme.capa" alt="{{ filme.titulo }}" class="card-img" />
+        </div>
     </div>
 </div>

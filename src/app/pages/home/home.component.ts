@@ -14,9 +14,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  generos = ['Animação', 'Ação e Aventura', 'Ficção Científica', 'Fantasia'];
+  generos = [
+    'Ação e Aventura',
+    'Animação',
+    'Comédia',
+    'Drama',
+    'Família',
+    'Fantasia',
+    'Ficção Científica',
+    'Romance',
+  ];
   filmesPorGenero: { [key: string]: Filme[] } = {};
-  limite = 10;
   constructor(private filmesService: FilmesService, private router: Router) {}
   ngOnInit(): void {
     this.filmesService.getFilmes().subscribe((filmes) => {

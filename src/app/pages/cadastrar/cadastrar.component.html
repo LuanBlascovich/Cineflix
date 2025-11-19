@@ -6,20 +6,20 @@
 
       <div class="grupo-input">
         <label for="nome" class="rotulo">Nome</label>
-        <input id="nome" name="nome" type="text" class="campo-input" placeholder="Digite seu nome" [(ngModel)]="nome"
+        <input id="nome" name="nome" type="text" class="campo-input" placeholder="Digite o nome" [(ngModel)]="nome"
           required autocomplete="name">
       </div>
 
       <div class="grupo-input">
         <label for="cpf" class="rotulo">CPF</label>
-        <input id="cpf" name="cpf" type="text" class="campo-input" placeholder="Digite seu CPF" [(ngModel)]="cpf"
+        <input id="cpf" name="cpf" type="text" class="campo-input" placeholder="Digite o CPF" [(ngModel)]="cpf"
           required maxlength="14" (blur)="validarCPF()" autocomplete="off" [readonly]="isEditMode">
         <small *ngIf="cpfInvalido" class="mensagem-erro">CPF inválido</small>
       </div>
 
       <div class="grupo-input">
         <label for="email" class="rotulo">Email</label>
-        <input id="email" name="email" type="email" class="campo-input" placeholder="Digite seu email"
+        <input id="email" name="email" type="email" class="campo-input" placeholder="Digite o email"
           [(ngModel)]="email" required #emailCtrl="ngModel" autocomplete="email">
         <small *ngIf="emailCtrl.invalid && emailCtrl.touched" class="mensagem-erro">
           Email inválido
@@ -37,7 +37,7 @@
 
       <div class="grupo-input">
         <label for="confirmSenha" class="rotulo">Confirme a senha</label>
-        <input id="confirmSenha" name="confirmSenha" type="password" class="campo-input" placeholder="Repita sua senha"
+        <input id="confirmSenha" name="confirmSenha" type="password" class="campo-input" placeholder="Repita a senha"
           [(ngModel)]="confirmSenha" [required]="!isEditMode" #confirmSenhaCtrl="ngModel" autocomplete="new-password">
         <small *ngIf="senha !== confirmSenha && confirmSenhaCtrl.touched" class="mensagem-erro">
           As senhas não coincidem

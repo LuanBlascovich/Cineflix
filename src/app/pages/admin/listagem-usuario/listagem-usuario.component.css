@@ -66,18 +66,21 @@
 }
 
 .btn-cadastrar {
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 6px;
-  background-color: #ffe100;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffe100, #ffda33);
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-cadastrar:hover {
-  background-color: #bea902;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ffd700, #ffcc00);
 }
 
 .tabela-usuarios {
@@ -118,29 +121,43 @@
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.acoes button:hover {
-  transform: scale(1.05);
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .btn-editar {
-  background-color: #3cb371;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #3cb371, #2e8b57);
   color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-editar:hover {
-  background-color: #2e8b57;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #2e8b57, #276748);
 }
 
 .btn-excluir {
-  background-color: #ff4d4d;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff4d4d, #e60000);
   color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-excluir:hover {
-  background-color: #e60000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #e60000, #cc0000);
 }
 
 @media (max-width: 768px) {

@@ -1,13 +1,4 @@
 import {
-  Footer,
-  Header,
-  ObjectUtils,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-T5MQC3WE.js";
-import {
   CommonModule,
   DOCUMENT,
   NgClass,
@@ -17,6 +8,15 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-T76FZRMF.js";
+import {
+  Footer,
+  Header,
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-T5MQC3WE.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

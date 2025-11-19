@@ -4,6 +4,7 @@ import { FilmesService } from '../../core/services/filmes.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { GENEROS_DISPONIVEIS } from '../../core/models/genero.model';
 
 @Component({
   selector: 'app-filmes',
@@ -15,6 +16,8 @@ import { FormsModule } from '@angular/forms';
 export class FilmesComponent implements OnInit {
   filmes: Filme[] = [];
   filtro: string = '';
+  generosDisponiveis = GENEROS_DISPONIVEIS;
+  generosSelecionados: string[] = [];
 
   constructor(private filmesService: FilmesService, private router: Router) {}
 
@@ -26,9 +29,22 @@ export class FilmesComponent implements OnInit {
 
   get filmesFiltrados(): Filme[] {
     const filtroLower = this.filtro.toLowerCase();
-    return this.filmes.filter((filme) =>
-      filme.titulo.toLowerCase().includes(filtroLower)
-    );
+    return this.filmes.filter((filme) => {
+      const tituloMatch = filme.titulo.toLowerCase().includes(filtroLower);
+      const generoMatch =
+        this.generosSelecionados.length === 0 ||
+        filme.generos.some((g) => this.generosSelecionados.includes(g));
+      return tituloMatch && generoMatch;
+    });
+  }
+  toggleGenero(genero: string, event: any) {
+    if (event.target.checked) {
+      this.generosSelecionados.push(genero);
+    } else {
+      this.generosSelecionados = this.generosSelecionados.filter(
+        (g) => g !== genero
+      );
+    }
   }
 
   verDetalhesFilme(id: number) {

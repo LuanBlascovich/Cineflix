@@ -29,7 +29,7 @@
                 <tr *ngFor="let filme of filmes">
                     <td>{{ filme.id }}</td>
                     <td>{{ filme.titulo }}</td>
-                    <td>{{ filme.generos.join(' / ') }}</td>
+                    <td>{{ filme.generos.join(' , ') }}</td>
                     <td>{{ filme.duracao }}</td>
                     <td>{{ filme.anoLancamento }}</td>
                     <td class="acoes">

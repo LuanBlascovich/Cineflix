@@ -38,6 +38,10 @@ export class UsuarioService {
     return this.http.get<Usuario[]>(`${this.apiUrl}?email=${email}`);
   }
 
+  verificarCpf(cpf: string): Observable<Usuario[]> {
+    return this.http.get<Usuario[]>(`${this.apiUrl}?cpf=${cpf}`);
+  }
+
   getTodosUsuarios(): Observable<Usuario[]> {
     return this.http.get<Usuario[]>(this.apiUrl);
   }
