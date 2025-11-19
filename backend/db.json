@@ -31,6 +31,14 @@
       "tipo": "usuario",
       "senha": "1234",
       "id": 4
+    },
+    {
+      "nome": "gi",
+      "email": "gi@gmail.com",
+      "cpf": "80382652037",
+      "tipo": "usuario",
+      "senha": "1234",
+      "id": 5
     }
   ],
   "filmes": [

@@ -103,12 +103,34 @@
   color: #f5f6f7;
 }
 
+.tabela-filmes th:nth-child(4),
+.tabela-filmes th:nth-child(5),
+.tabela-filmes th:nth-child(6) {
+  text-align: center;
+}
+
 .tabela-filmes tbody tr {
   border-bottom: 1px solid #31343e;
 }
 
 .tabela-filmes tbody tr:hover {
   background-color: #1a1f5b;
+}
+
+.tabela-filmes td.acoes {
+  width: 180px;
+  white-space: nowrap;
+}
+
+.tabela-filmes td:nth-child(4) {
+  width: 100px;
+  white-space: nowrap;
+}
+
+.tabela-filmes td:nth-child(5) {
+  width: 100px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .acoes button {

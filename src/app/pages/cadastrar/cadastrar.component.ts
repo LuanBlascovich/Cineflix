@@ -46,7 +46,7 @@ export class CadastrarComponent implements OnInit {
         this.nome = usuario.nome;
         this.email = usuario.email;
         this.cpf = usuario.cpf;
-        this.senha = usuario.senha; 
+        this.senha = usuario.senha;
         this.confirmSenha = usuario.senha;
       }
     });
@@ -111,29 +111,41 @@ export class CadastrarComponent implements OnInit {
       senha: this.senha,
     };
 
-    if (this.isEditMode && this.usuarioId) {
-      this.usuarioService.editarUsuario(this.usuarioId, usuario).subscribe({
-        next: () => {
-          alert('Usuário editado com sucesso!');
-          this.router.navigate(['/admin/usuarios']);
-        },
-        error: (err) => {
-          console.error(err);
-          alert('Ocorreu um erro ao editar. Tente novamente.');
-        },
-      });
-    } else {
-      this.usuarioService.cadastrar(usuario).subscribe({
-        next: () => {
-          alert('Cadastro realizado com sucesso!');
-          form.resetForm();
-          this.router.navigate(['/login']);
-        },
-        error: (err) => {
-          console.error(err);
-          alert('Ocorreu um erro ao cadastrar. Tente novamente.');
-        },
-      });
-    }
+    this.usuarioService.verificarCpf(this.cpf).subscribe((usuarios) => {
+      const cpfJaExiste = usuarios.some(
+        (u) =>
+          u.cpf === this.cpf && (!this.isEditMode || u.id !== this.usuarioId)
+      );
+
+      if (cpfJaExiste) {
+        alert('Este CPF já está cadastrado!');
+        return;
+      }
+
+      if (this.isEditMode && this.usuarioId) {
+        this.usuarioService.editarUsuario(this.usuarioId, usuario).subscribe({
+          next: () => {
+            alert('Usuário editado com sucesso!');
+            this.router.navigate(['/admin/usuarios']);
+          },
+          error: (err) => {
+            console.error(err);
+            alert('Ocorreu um erro ao editar. Tente novamente.');
+          },
+        });
+      } else {
+        this.usuarioService.cadastrar(usuario).subscribe({
+          next: () => {
+            alert('Cadastro realizado com sucesso!');
+            form.resetForm();
+            this.router.navigate(['/login']);
+          },
+          error: (err) => {
+            console.error(err);
+            alert('Ocorreu um erro ao cadastrar. Tente novamente.');
+          },
+        });
+      }
+    });
   }
 }

@@ -4,6 +4,7 @@ import { FilmesService } from '../../../core/services/filmes.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { GENEROS_DISPONIVEIS } from '../../../core/models/genero.model';
 
 @Component({
   selector: 'app-cadastrar-filme',
@@ -23,12 +24,7 @@ export class CadastrarFilmeComponent implements OnInit {
     anoLancamento: new Date().getFullYear(),
   };
 
-  generosDisponiveis: string[] = [
-    'Animação',
-    'Ação e Aventura',
-    'Ficção Científica',
-    'Fantasia',
-  ];
+  generosDisponiveis = GENEROS_DISPONIVEIS;
   generosInvalid: boolean = false;
   isEditMode: boolean = false;
 
