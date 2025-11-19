@@ -1,0 +1,53 @@
+<div class="login">
+    <div class="formulario-card">
+        <h1 class="titulo-formulario">{{ isEditMode ? 'Editar Filme' : 'Cadastrar Filme' }}</h1>
+
+        <form (ngSubmit)="cadastrar(filmeForm)" #filmeForm="ngForm">
+
+            <div class="grupo-input">
+                <label for="titulo" class="rotulo">Título</label>
+                <input id="titulo" name="titulo" type="text" class="campo-input" placeholder="Digite o título do filme"
+                    [(ngModel)]="filme.titulo" required autocomplete="off">
+            </div>
+
+            <div class="grupo-input">
+                <label class="rotulo">Gêneros</label>
+                <div *ngFor="let g of generosDisponiveis" class="checkbox-item">
+                    <input type="checkbox" [id]="g" [value]="g" (change)="toggleGenero(g)"
+                        [checked]="filme.generos.includes(g)">
+                    <label [for]="g">{{ g }}</label>
+                </div>
+                <small class="mensagem-erro" *ngIf="generosInvalid">Selecione pelo menos um gênero</small>
+            </div>
+
+            <div class="grupo-input">
+                <label for="duracao" class="rotulo">Duração</label>
+                <input id="duracao" name="duracao" type="text" class="campo-input" placeholder="Ex: 2h 30min"
+                    [(ngModel)]="filme.duracao" required autocomplete="off">
+            </div>
+
+            <div class="grupo-input">
+                <label for="anoLancamento" class="rotulo">Ano de Lançamento</label>
+                <input id="anoLancamento" name="anoLancamento" type="number" class="campo-input" placeholder="Ex: 2024"
+                    [(ngModel)]="filme.anoLancamento" required min="1800" max="2100">
+            </div>
+
+            <div class="grupo-input">
+                <label for="descricao" class="rotulo">Descrição</label>
+                <textarea id="descricao" name="descricao" class="campo-input" placeholder="Digite a descrição do filme"
+                    [(ngModel)]="filme.descricao" required></textarea>
+            </div>
+
+            <div class="grupo-input">
+                <label for="capa" class="rotulo">Caminho da Capa</label>
+                <input id="capa" name="capa" type="text" class="campo-input" placeholder="Cole o caminho da imagem"
+                    [(ngModel)]="filme.capa" required autocomplete="off">
+            </div>
+
+            <button type="submit" class="botao-enviar" [disabled]="filmeForm.invalid || generosInvalid">
+                {{ isEditMode ? 'Editar' : 'Cadastrar' }}
+            </button>
+
+        </form>
+    </div>
+</div>

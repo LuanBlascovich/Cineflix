@@ -1,0 +1,38 @@
+<div class="login">
+  <div class="formulario-card">
+    <h1 class="titulo-formulario">Login</h1>
+
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+      <div class="grupo-input">
+        <label for="email" class="rotulo">Entre com seu e-mail</label>
+        <input id="email" type="email" placeholder="EMAIL" class="campo-input" [(ngModel)]="email" name="email" required
+          email #emailInput="ngModel">
+        <div *ngIf="emailInput.invalid && emailInput.touched" class="mensagem-erro">
+          <span *ngIf="emailInput.errors?.['required']">O email é obrigatório.</span>
+          <span *ngIf="emailInput.errors?.['email']">Email inválido.</span>
+        </div>
+      </div>
+
+      <div class="grupo-input">
+        <label for="senha" class="rotulo">Senha</label>
+        <input id="senha" type="password" placeholder="SENHA" class="campo-input" [(ngModel)]="senha" name="senha"
+          required #senhaInput="ngModel">
+        <div *ngIf="senhaInput.invalid && senhaInput.touched" class="mensagem-erro">
+          <span *ngIf="senhaInput.errors?.['required']">A senha é obrigatória.</span>
+        </div>
+      </div>
+
+      <div *ngIf="erroLogin" class="mensagem-erro">{{ erroLogin }}</div>
+
+      <button type="submit" class="botao-enviar" [disabled]="loginForm.invalid">
+        Entrar
+      </button>
+
+      <div class="link-login">
+        <a routerLink="/cadastrar">Cadastre-se</a>
+      </div>
+
+    </form>
+  </div>
+</div>
